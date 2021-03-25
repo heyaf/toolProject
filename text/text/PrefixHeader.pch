@@ -1,0 +1,127 @@
+//
+//  PrefixHeader.pch
+//  text
+//
+//  Created by Mac on 2018/12/12.
+//  Copyright © 2018 Mac. All rights reserved.
+//
+
+#import <Masonry.h>
+#import <MBProgressHUD.h>
+#import <YYKit.h>
+#import "UIImage+Additions.h"
+#import "AppDelegate.h"
+#import "AppDelegate+AppService.h"
+#import "EMTheme.h"
+#import "EMResult.h"
+#import "EMQueueDef.h"
+#import "EMTips.h"
+#import "RootNavigationController.h"
+#import <AxcAE_TabBar/AxcAE_TabBar.h>
+#import <BRPickerView.h>
+
+//拼接字符串
+#define NSStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH  [UIScreen mainScreen].bounds.size.height
+
+#define kISiPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define kScreenMaxLength (MAX(kScreenWidth, kScreenHeight))
+#define kScreenMinLength (MIN(kScreenWidth, kScreenHeight))
+#define kISiPhone5 (kISiPhone && kScreenMaxLength == 568.0)
+#define kISiPhone6 (kISiPhone && kScreenMaxLength == 667.0)
+#define kISiPhone6P (kISiPhone && kScreenMaxLength == 736.0)
+#define kISiPhoneX (kISiPhone && kScreenMaxLength == 812.0)
+#define IMAGE_NAMED(name) [UIImage imageNamed:name]
+
+//6为标准适配的,如果需要其他标准可以修改
+#define kScale_H(h) ((kScreenHeight)/667) * (h)
+#define kScale_W(w) ((kScreenWidth)/375) * (w)
+//状态栏高度
+#define isPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavBarHeight 44
+#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+
+#define kBoldFont(x) [UIFont boldSystemFontOfSize:x]
+#define kFont(x) [UIFont systemFontOfSize:x]
+#define kNameFont(x) [UIFont fontWithName:@"Heiti SC" size:x]
+
+//RGB格式
+#define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+//RGBA格式
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+//随机颜色
+#define RandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+//APP对象 （单例对象）
+#define kApplication [UIApplication sharedApplication]
+//主窗口 （keyWindow）
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+//NSUserDefaults实例化
+#define kUserDefaults [NSUserDefaults standardUserDefaults]
+//通知中心 （单例对象）
+#define kNotificationCenter [NSNotificationCenter defaultCenter]
+//APP版本号
+#define kVersion [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"]
+#define kAppDelegate [AppDelegate shareAppDelegate]
+
+//加载图片
+#define kGetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+//弱引用
+#define kWeakSelf(type)  __weak typeof(type) weak##type = type
+//强引用
+#define kStrongSelf(type)  __strong typeof(type) type = weak##type
+//加载xib
+#define kLoadNib(nibName) [UINib nibWithNibName:nibName bundle:[NSBundle mainBundle]]
+//字符串拼接
+#define kStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
+//属性快速声明
+#define kPropertyString(name) @property(nonatomic,copy)NSString *name
+#define kPropertyStrong(type,name) @property(nonatomic,strong)type *name
+#define kPropertyAssign(name) @property(nonatomic,assign)NSInteger name
+// View 圆角和加边框
+#define kViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+// View 圆角
+#define kViewRadius(View, Radius)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+//永久存储对象
+#define kSetUserDefaults(object, key)                                                                                                 \
+({                                                                                                                                             \
+NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];                                                                         \
+[defaults setObject:object forKey:key];                                                                                                    \
+[defaults synchronize];                                                                                                                    \
+})
+//获取对象
+#define kGetUserDefaults(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
+//删除某一个对象
+#define kRemoveUserDefaults(key)                                         \
+({                                                                          \
+NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];       \
+[defaults removeObjectForKey:_key];                                     \
+[defaults synchronize];                                                 \
+})
+//清除 NSUserDefaults 保存的所有数据
+#define kRemoveAllUserDefaults  [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:[[NSBundle mainBundle] bundleIdentifier]]
+
+#define kJBlackColor [UIColor blackColor]
+#define kDarkGrayColor [UIColor darkGrayColor]
+#define kLightGrayColor [UIColor lightGrayColor]
+#define kWhiteColor [UIColor whiteColor]
+#define kGrayColor [UIColor grayColor]
+#define kRedColor [UIColor redColor]
+#define kGreenColor [UIColor greenColor]
+#define kBlueColor [UIColor blueColor]
+#define kYellowColor [UIColor yellowColor]
+#define kClearColor [UIColor clearColor]
+#define kMainColor RGB(18,150,219)
+

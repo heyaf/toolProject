@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'text' do
+
+pod 'AFNetworking'
+            # 数据存储、短信、云引擎调用等基础服务模块
+pod 'AVOSCloud'               # 数据存储、短信、云引擎调用等基础服务模块
+pod 'AVOSCloudIM'             # 即时通讯模块
+pod 'YYKit'
+pod 'Masonry'
+pod 'CZPicker'
+pod 'MMNumberKeyboard'
+pod 'PNChart'
+pod 'ImageMagick','~>6.8.8-9'
+pod 'FMDB'
+pod 'MBProgressHUD'
+pod 'MJRefresh'
+pod 'AxcAE_TabBar'
+pod 'BRPickerView'
+end
