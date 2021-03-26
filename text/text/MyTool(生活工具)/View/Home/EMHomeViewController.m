@@ -15,7 +15,7 @@
 #import "EMAlertViewController.h"
 #import "EMBillViewController.h"
 #import "EMHomeManager.h"
-#import "YFLittleProjectVC03.h"
+//#import "YFLittleProjectVC03.h"
 #import "LXFCalculatorViewController.h"
 
 @interface EMHomeViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
@@ -126,8 +126,7 @@ static NSString *homeCollectionResuableViewIdentifier = @"homeCollectionResuable
         vc = [[EMBigDayViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else if ([menuTitle isEqualToString:NSLocalizedString(@"小游戏", nil)]) {
-        vc = [[YFLittleProjectVC03 alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+        
     } else if ([menuTitle isEqualToString:NSLocalizedString(@"收纳", nil)]) {
         vc = [[EMPlaceViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];

@@ -1,0 +1,24 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace /Users/Gakki/Downloads/hyfDailymark/text/text.xcworkspace -scheme text -configuration Debug BUILD_DIR=/Users/Gakki/Downloads/hyfDailymark/text/build build ENABLE_BITCODE=NO
+
+Build settings from command line:
+    BUILD_DIR = /Users/Gakki/Downloads/hyfDailymark/text/build
+    ENABLE_BITCODE = NO
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Constructing build description
+warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 6.0, but the range of supported deployment target versions is 9.0 to 14.0.99. (in target 'MJRefresh' from project 'Pods')
+warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 4.3, but the range of supported deployment target versions is 9.0 to 14.0.99. (in target 'FMDB' from project 'Pods')
+error: No profiles for 'com.littlebookkeep.beijing.com' were found: Xcode couldn't find any iOS App Development provisioning profiles matching 'com.littlebookkeep.beijing.com'. Automatic signing is disabled and unable to generate a profile. To enable automatic signing, pass -allowProvisioningUpdates to xcodebuild. (in target 'text' from project 'text')
+warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 6.0, but the range of supported deployment target versions is 9.0 to 14.0.99. (in target 'YYKit' from project 'Pods')
+warning: AssetsLibrary is deprecated. Consider migrating to Photos instead. (in target 'YYKit' from project 'Pods')
+warning: MobileCoreServices has been renamed. Use CoreServices instead. (in target 'YYKit' from project 'Pods')
+warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.0.99. (in target 'CZPicker' from project 'Pods')
+warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.0.99. (in target 'AxcAE_TabBar' from project 'Pods')
+warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.0.99. (in target 'MBProgressHUD' from project 'Pods')
+warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 5.0, but the range of supported deployment target versions is 9.0 to 14.0.99. (in target 'UICountingLabel' from project 'Pods')
+warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.0.99. (in target 'BRPickerView' from project 'Pods')
+warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 6.0, but the range of supported deployment target versions is 9.0 to 14.0.99. (in target 'Masonry' from project 'Pods')
+

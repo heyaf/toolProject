@@ -15,7 +15,7 @@
 #import "EMSettingViewController.h"
 #import "EMBaseNavigationController.h"
 #import "OtherViewController.h"
-#import "YFLittleProjectVC03.h"
+//#import "YFLittleProjectVC03.h"
 @interface hyftabbarController ()<AxcAE_TabBarDelegate>
 
 @end
@@ -43,7 +43,6 @@
     OtherViewController *mytoolVC = [[OtherViewController alloc] init];
     EMSettingViewController *setVC = [EMSettingViewController new];
     
-    YFLittleProjectVC03 *vc = [YFLittleProjectVC03 new];
     
     NSArray <NSDictionary *>*VCArray =
     @[@{@"vc":[[RootNavigationController alloc] initWithRootViewController:embillVC],@"normalImg":@"home",@"selectImg":@"homesec",@"itemTitle":@"记账"},

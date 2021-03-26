@@ -28,9 +28,13 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>App需要访问您的相机以给"日记"添加图片</string>
+	<string>该App需要访问您的相机以给"日记"添加图片</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>该App需要时刻访问您的位置以便于记录日记发布时的用户位置</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>该App需要在使用期间访问您的位置以便于记录日记发布时的用户位置</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>App需要访问您的相册以给"日记"添加图片</string>
+	<string>该App需要访问您的相册以给"日记"添加图片</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

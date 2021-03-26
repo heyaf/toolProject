@@ -51,7 +51,10 @@ static NSString *monthBillTableViewCellIdentifier = @"monthBillTableViewCellIden
     self.navigationItem.title = @"账单";
     [self.view addSubview:self.tableView];
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self loadData];
+}
 
 - (void)loadData
 {
@@ -100,7 +103,7 @@ static NSString *monthBillTableViewCellIdentifier = @"monthBillTableViewCellIden
 //    }];
     UILabel *yearLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 5, 45,15)];
     [_chooseView addSubview:yearLabel];
-    yearLabel.text = @"2018年";
+    yearLabel.text = @"2021年";
     yearLabel.textColor = kWhiteColor;
     yearLabel.textAlignment = NSTextAlignmentLeft;
     yearLabel.font = kFont(11);
@@ -114,7 +117,7 @@ static NSString *monthBillTableViewCellIdentifier = @"monthBillTableViewCellIden
 //
     UILabel *monthlabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 20, 45, 15)];
     [_chooseView addSubview:monthlabel];
-    monthlabel.text = @"12月";
+    monthlabel.text = @"03月";
     monthlabel.textColor = kWhiteColor;
     monthlabel.textAlignment = NSTextAlignmentLeft;
     monthlabel.font = kFont(15);
