@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB86CD51260EE0B6009D46B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD50260EE0B6009D46B6 /* AppDelegate.m */; };
+		AB86CD54260EE0B6009D46B6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD53260EE0B6009D46B6 /* SceneDelegate.m */; };
+		AB86CD57260EE0B6009D46B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD56260EE0B6009D46B6 /* ViewController.m */; };
+		AB86CD5A260EE0B6009D46B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB86CD58260EE0B6009D46B6 /* Main.storyboard */; };
+		AB86CD5C260EE0B8009D46B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB86CD5B260EE0B8009D46B6 /* Assets.xcassets */; };
+		AB86CD5F260EE0B8009D46B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB86CD5D260EE0B8009D46B6 /* LaunchScreen.storyboard */; };
+		AB86CD62260EE0B8009D46B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD61260EE0B8009D46B6 /* main.m */; };
+		AB86CD6C260EE0B9009D46B6 /* MiuCalculatorProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD6B260EE0B9009D46B6 /* MiuCalculatorProTests.m */; };
+		AB86CD77260EE0B9009D46B6 /* MiuCalculatorProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD76260EE0B9009D46B6 /* MiuCalculatorProUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB86CD68260EE0B9009D46B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB86CD44260EE0B6009D46B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB86CD4B260EE0B6009D46B6;
+			remoteInfo = MiuCalculatorPro;
+		};
+		AB86CD73260EE0B9009D46B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB86CD44260EE0B6009D46B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB86CD4B260EE0B6009D46B6;
+			remoteInfo = MiuCalculatorPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB86CD4C260EE0B6009D46B6 /* MiuCalculatorPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiuCalculatorPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB86CD4F260EE0B6009D46B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB86CD50260EE0B6009D46B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB86CD52260EE0B6009D46B6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		AB86CD53260EE0B6009D46B6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		AB86CD55260EE0B6009D46B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB86CD56260EE0B6009D46B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB86CD59260EE0B6009D46B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB86CD5B260EE0B8009D46B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB86CD5E260EE0B8009D46B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB86CD60260EE0B8009D46B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB86CD61260EE0B8009D46B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB86CD67260EE0B9009D46B6 /* MiuCalculatorProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiuCalculatorProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB86CD6B260EE0B9009D46B6 /* MiuCalculatorProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiuCalculatorProTests.m; sourceTree = "<group>"; };
+		AB86CD6D260EE0B9009D46B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB86CD72260EE0B9009D46B6 /* MiuCalculatorProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiuCalculatorProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB86CD76260EE0B9009D46B6 /* MiuCalculatorProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiuCalculatorProUITests.m; sourceTree = "<group>"; };
+		AB86CD78260EE0B9009D46B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB86CD49260EE0B6009D46B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB86CD64260EE0B9009D46B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB86CD6F260EE0B9009D46B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB86CD43260EE0B6009D46B6 = {
+			isa = PBXGroup;
+			children = (
+				AB86CD4E260EE0B6009D46B6 /* MiuCalculatorPro */,
+				AB86CD6A260EE0B9009D46B6 /* MiuCalculatorProTests */,
+				AB86CD75260EE0B9009D46B6 /* MiuCalculatorProUITests */,
+				AB86CD4D260EE0B6009D46B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB86CD4D260EE0B6009D46B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB86CD4C260EE0B6009D46B6 /* MiuCalculatorPro.app */,
+				AB86CD67260EE0B9009D46B6 /* MiuCalculatorProTests.xctest */,
+				AB86CD72260EE0B9009D46B6 /* MiuCalculatorProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB86CD4E260EE0B6009D46B6 /* MiuCalculatorPro */ = {
+			isa = PBXGroup;
+			children = (
+				AB86CD4F260EE0B6009D46B6 /* AppDelegate.h */,
+				AB86CD50260EE0B6009D46B6 /* AppDelegate.m */,
+				AB86CD52260EE0B6009D46B6 /* SceneDelegate.h */,
+				AB86CD53260EE0B6009D46B6 /* SceneDelegate.m */,
+				AB86CD55260EE0B6009D46B6 /* ViewController.h */,
+				AB86CD56260EE0B6009D46B6 /* ViewController.m */,
+				AB86CD58260EE0B6009D46B6 /* Main.storyboard */,
+				AB86CD5B260EE0B8009D46B6 /* Assets.xcassets */,
+				AB86CD5D260EE0B8009D46B6 /* LaunchScreen.storyboard */,
+				AB86CD60260EE0B8009D46B6 /* Info.plist */,
+				AB86CD61260EE0B8009D46B6 /* main.m */,
+			);
+			path = MiuCalculatorPro;
+			sourceTree = "<group>";
+		};
+		AB86CD6A260EE0B9009D46B6 /* MiuCalculatorProTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB86CD6B260EE0B9009D46B6 /* MiuCalculatorProTests.m */,
+				AB86CD6D260EE0B9009D46B6 /* Info.plist */,
+			);
+			path = MiuCalculatorProTests;
+			sourceTree = "<group>";
+		};
+		AB86CD75260EE0B9009D46B6 /* MiuCalculatorProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB86CD76260EE0B9009D46B6 /* MiuCalculatorProUITests.m */,
+				AB86CD78260EE0B9009D46B6 /* Info.plist */,
+			);
+			path = MiuCalculatorProUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB86CD4B260EE0B6009D46B6 /* MiuCalculatorPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB86CD7B260EE0B9009D46B6 /* Build configuration list for PBXNativeTarget "MiuCalculatorPro" */;
+			buildPhases = (
+				AB86CD48260EE0B6009D46B6 /* Sources */,
+				AB86CD49260EE0B6009D46B6 /* Frameworks */,
+				AB86CD4A260EE0B6009D46B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiuCalculatorPro;
+			productName = MiuCalculatorPro;
+			productReference = AB86CD4C260EE0B6009D46B6 /* MiuCalculatorPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB86CD66260EE0B9009D46B6 /* MiuCalculatorProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB86CD7E260EE0B9009D46B6 /* Build configuration list for PBXNativeTarget "MiuCalculatorProTests" */;
+			buildPhases = (
+				AB86CD63260EE0B9009D46B6 /* Sources */,
+				AB86CD64260EE0B9009D46B6 /* Frameworks */,
+				AB86CD65260EE0B9009D46B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB86CD69260EE0B9009D46B6 /* PBXTargetDependency */,
+			);
+			name = MiuCalculatorProTests;
+			productName = MiuCalculatorProTests;
+			productReference = AB86CD67260EE0B9009D46B6 /* MiuCalculatorProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB86CD71260EE0B9009D46B6 /* MiuCalculatorProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB86CD81260EE0B9009D46B6 /* Build configuration list for PBXNativeTarget "MiuCalculatorProUITests" */;
+			buildPhases = (
+				AB86CD6E260EE0B9009D46B6 /* Sources */,
+				AB86CD6F260EE0B9009D46B6 /* Frameworks */,
+				AB86CD70260EE0B9009D46B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB86CD74260EE0B9009D46B6 /* PBXTargetDependency */,
+			);
+			name = MiuCalculatorProUITests;
+			productName = MiuCalculatorProUITests;
+			productReference = AB86CD72260EE0B9009D46B6 /* MiuCalculatorProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB86CD44260EE0B6009D46B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					AB86CD4B260EE0B6009D46B6 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					AB86CD66260EE0B9009D46B6 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = AB86CD4B260EE0B6009D46B6;
+					};
+					AB86CD71260EE0B9009D46B6 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = AB86CD4B260EE0B6009D46B6;
+					};
+				};
+			};
+			buildConfigurationList = AB86CD47260EE0B6009D46B6 /* Build configuration list for PBXProject "MiuCalculatorPro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB86CD43260EE0B6009D46B6;
+			productRefGroup = AB86CD4D260EE0B6009D46B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB86CD4B260EE0B6009D46B6 /* MiuCalculatorPro */,
+				AB86CD66260EE0B9009D46B6 /* MiuCalculatorProTests */,
+				AB86CD71260EE0B9009D46B6 /* MiuCalculatorProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB86CD4A260EE0B6009D46B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB86CD5F260EE0B8009D46B6 /* LaunchScreen.storyboard in Resources */,
+				AB86CD5C260EE0B8009D46B6 /* Assets.xcassets in Resources */,
+				AB86CD5A260EE0B6009D46B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB86CD65260EE0B9009D46B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB86CD70260EE0B9009D46B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB86CD48260EE0B6009D46B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB86CD57260EE0B6009D46B6 /* ViewController.m in Sources */,
+				AB86CD51260EE0B6009D46B6 /* AppDelegate.m in Sources */,
+				AB86CD62260EE0B8009D46B6 /* main.m in Sources */,
+				AB86CD54260EE0B6009D46B6 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB86CD63260EE0B9009D46B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB86CD6C260EE0B9009D46B6 /* MiuCalculatorProTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB86CD6E260EE0B9009D46B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB86CD77260EE0B9009D46B6 /* MiuCalculatorProUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB86CD69260EE0B9009D46B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB86CD4B260EE0B6009D46B6 /* MiuCalculatorPro */;
+			targetProxy = AB86CD68260EE0B9009D46B6 /* PBXContainerItemProxy */;
+		};
+		AB86CD74260EE0B9009D46B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB86CD4B260EE0B6009D46B6 /* MiuCalculatorPro */;
+			targetProxy = AB86CD73260EE0B9009D46B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB86CD58260EE0B6009D46B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB86CD59260EE0B6009D46B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB86CD5D260EE0B8009D46B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB86CD5E260EE0B8009D46B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB86CD79260EE0B9009D46B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB86CD7A260EE0B9009D46B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB86CD7C260EE0B9009D46B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J69V6VXM9A;
+				INFOPLIST_FILE = MiuCalculatorPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASKeepBookflu.www.MiuCalculatorPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB86CD7D260EE0B9009D46B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J69V6VXM9A;
+				INFOPLIST_FILE = MiuCalculatorPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASKeepBookflu.www.MiuCalculatorPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB86CD7F260EE0B9009D46B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J69V6VXM9A;
+				INFOPLIST_FILE = MiuCalculatorProTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASKeepBookflu.www.MiuCalculatorProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiuCalculatorPro.app/MiuCalculatorPro";
+			};
+			name = Debug;
+		};
+		AB86CD80260EE0B9009D46B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J69V6VXM9A;
+				INFOPLIST_FILE = MiuCalculatorProTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASKeepBookflu.www.MiuCalculatorProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiuCalculatorPro.app/MiuCalculatorPro";
+			};
+			name = Release;
+		};
+		AB86CD82260EE0B9009D46B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J69V6VXM9A;
+				INFOPLIST_FILE = MiuCalculatorProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASKeepBookflu.www.MiuCalculatorProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiuCalculatorPro;
+			};
+			name = Debug;
+		};
+		AB86CD83260EE0B9009D46B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J69V6VXM9A;
+				INFOPLIST_FILE = MiuCalculatorProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASKeepBookflu.www.MiuCalculatorProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiuCalculatorPro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB86CD47260EE0B6009D46B6 /* Build configuration list for PBXProject "MiuCalculatorPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB86CD79260EE0B9009D46B6 /* Debug */,
+				AB86CD7A260EE0B9009D46B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB86CD7B260EE0B9009D46B6 /* Build configuration list for PBXNativeTarget "MiuCalculatorPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB86CD7C260EE0B9009D46B6 /* Debug */,
+				AB86CD7D260EE0B9009D46B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB86CD7E260EE0B9009D46B6 /* Build configuration list for PBXNativeTarget "MiuCalculatorProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB86CD7F260EE0B9009D46B6 /* Debug */,
+				AB86CD80260EE0B9009D46B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB86CD81260EE0B9009D46B6 /* Build configuration list for PBXNativeTarget "MiuCalculatorProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB86CD82260EE0B9009D46B6 /* Debug */,
+				AB86CD83260EE0B9009D46B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB86CD44260EE0B6009D46B6 /* Project object */;
+}

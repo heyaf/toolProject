@@ -17,16 +17,6 @@
 		043D916721C10972001B1ABD /* LXFCalculatorGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D903A21C10972001B1ABD /* LXFCalculatorGroupViewController.m */; };
 		043D916821C10972001B1ABD /* LXFCalculatorBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D903D21C10972001B1ABD /* LXFCalculatorBaseViewController.m */; };
 		043D916921C10972001B1ABD /* LXFCalculatorFundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D903F21C10972001B1ABD /* LXFCalculatorFundViewController.m */; };
-		043D916A21C10972001B1ABD /* LXFCalculateResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D904221C10972001B1ABD /* LXFCalculateResultModel.m */; };
-		043D916B21C10972001B1ABD /* LXFCalcSelectStrCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D904621C10972001B1ABD /* LXFCalcSelectStrCell.m */; };
-		043D916C21C10972001B1ABD /* LXFCalcInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043D904821C10972001B1ABD /* LXFCalcInputCell.xib */; };
-		043D916D21C10972001B1ABD /* LXFCalcInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D904921C10972001B1ABD /* LXFCalcInputCell.m */; };
-		043D916E21C10972001B1ABD /* LXFCalculatorCalcBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D904B21C10972001B1ABD /* LXFCalculatorCalcBtnView.m */; };
-		043D916F21C10972001B1ABD /* LXFPopResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D904C21C10972001B1ABD /* LXFPopResultView.m */; };
-		043D917021C10972001B1ABD /* LXFCalcSelectStrCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043D904D21C10972001B1ABD /* LXFCalcSelectStrCell.xib */; };
-		043D917121C10972001B1ABD /* LXFCalculatorCalcBtnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043D904E21C10972001B1ABD /* LXFCalculatorCalcBtnView.xib */; };
-		043D917221C10972001B1ABD /* LXFPopResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D904F21C10972001B1ABD /* LXFPopResultCell.m */; };
-		043D917321C10972001B1ABD /* LXFPopResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043D905021C10972001B1ABD /* LXFPopResultCell.xib */; };
 		043D917421C10972001B1ABD /* XLBasePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D905521C10972001B1ABD /* XLBasePageController.m */; };
 		043D917521C10972001B1ABD /* LCActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D905921C10972001B1ABD /* LCActionSheetViewController.m */; };
 		043D917621C10972001B1ABD /* LCActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D905A21C10972001B1ABD /* LCActionSheetCell.m */; };
@@ -116,12 +106,6 @@
 		043D91CA21C10972001B1ABD /* EMDiaryNoPicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D912D21C10972001B1ABD /* EMDiaryNoPicTableViewCell.m */; };
 		043D91CB21C10972001B1ABD /* EMDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D912F21C10972001B1ABD /* EMDiaryViewController.m */; };
 		043D91CC21C10972001B1ABD /* EMDiaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D913121C10972001B1ABD /* EMDiaryTableViewCell.m */; };
-		043D91CD21C10972001B1ABD /* EMSettingActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D913421C10972001B1ABD /* EMSettingActionSheet.m */; };
-		043D91CE21C10972001B1ABD /* EMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D913621C10972001B1ABD /* EMSettingViewController.m */; };
-		043D91CF21C10972001B1ABD /* EMSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D913921C10972001B1ABD /* EMSettingTableViewCell.m */; };
-		043D91D021C10972001B1ABD /* EMSettingActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D913B21C10972001B1ABD /* EMSettingActionCell.m */; };
-		043D91D121C10972001B1ABD /* EMAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D913C21C10972001B1ABD /* EMAboutUsViewController.m */; };
-		043D91D221C10972001B1ABD /* EMSettingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D913E21C10972001B1ABD /* EMSettingHeaderView.m */; };
 		043D91D321C10972001B1ABD /* EMCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D914121C10972001B1ABD /* EMCardCollectionViewCell.m */; };
 		043D91D421C10972001B1ABD /* EMCardSelectedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D914221C10972001B1ABD /* EMCardSelectedLayout.m */; };
 		043D91D521C10972001B1ABD /* EMCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D914321C10972001B1ABD /* EMCardLayout.m */; };
@@ -152,8 +136,6 @@
 		049EAD4C21C166F5000ADAE4 /* XYTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EAD4721C166F5000ADAE4 /* XYTransition.m */; };
 		049EAD4D21C166F5000ADAE4 /* SQPrintJsonLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EAD4B21C166F5000ADAE4 /* SQPrintJsonLog.m */; };
 		04C0A1F021C7761800503ADA /* SXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A1EE21C7761800503ADA /* SXAlertView.m */; };
-		04C0A1F421C7785400503ADA /* suggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A1F121C7785400503ADA /* suggestViewController.m */; };
-		04C0A1F521C7785400503ADA /* suggestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C0A1F221C7785400503ADA /* suggestViewController.xib */; };
 		04C0A1F921C7796B00503ADA /* XXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C0A1F821C7796B00503ADA /* XXTextView.m */; };
 		04C1A4582189C81400967956 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C1A4572189C81400967956 /* AppDelegate.m */; };
 		04C1A45E2189C81400967956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C1A45C2189C81400967956 /* Main.storyboard */; };
@@ -164,6 +146,24 @@
 		04C1A47B2189C81600967956 /* textUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C1A47A2189C81600967956 /* textUITests.m */; };
 		04DFAEB521CB7B260065D6E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFAEB421CB7B260065D6E3 /* ViewController.m */; };
 		22A28FC69D71A8D25A37DAEF /* libPods-text.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0523D3F8F07DA5C778F66905 /* libPods-text.a */; };
+		AB26096C260DD57200C1EC31 /* suggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26095E260DD57200C1EC31 /* suggestViewController.m */; };
+		AB26096D260DD57200C1EC31 /* EMSettingActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26095F260DD57200C1EC31 /* EMSettingActionSheet.m */; };
+		AB26096E260DD57200C1EC31 /* EMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB260961260DD57200C1EC31 /* EMSettingViewController.m */; };
+		AB26096F260DD57200C1EC31 /* EMSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB260964260DD57200C1EC31 /* EMSettingTableViewCell.m */; };
+		AB260970260DD57200C1EC31 /* EMSettingActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB260967260DD57200C1EC31 /* EMSettingActionCell.m */; };
+		AB260971260DD57200C1EC31 /* EMAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB260968260DD57200C1EC31 /* EMAboutUsViewController.m */; };
+		AB260972260DD57200C1EC31 /* suggestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB26096A260DD57200C1EC31 /* suggestViewController.xib */; };
+		AB260973260DD57200C1EC31 /* EMSettingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26096B260DD57200C1EC31 /* EMSettingHeaderView.m */; };
+		AB260989260DD6F700C1EC31 /* LXFCalculateResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB260979260DD6F700C1EC31 /* LXFCalculateResultModel.m */; };
+		AB26098A260DD6F700C1EC31 /* LXFCalcSelectStrCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26097D260DD6F700C1EC31 /* LXFCalcSelectStrCell.m */; };
+		AB26098B260DD6F700C1EC31 /* LXFCalcInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB26097F260DD6F700C1EC31 /* LXFCalcInputCell.xib */; };
+		AB26098C260DD6F700C1EC31 /* LXFCalcInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB260980260DD6F700C1EC31 /* LXFCalcInputCell.m */; };
+		AB26098D260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB260982260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.m */; };
+		AB26098E260DD6F700C1EC31 /* LXFPopResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB260983260DD6F700C1EC31 /* LXFPopResultView.m */; };
+		AB26098F260DD6F700C1EC31 /* LXFCalcSelectStrCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB260984260DD6F700C1EC31 /* LXFCalcSelectStrCell.xib */; };
+		AB260990260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB260985260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.xib */; };
+		AB260991260DD6F700C1EC31 /* LXFPopResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB260986260DD6F700C1EC31 /* LXFPopResultCell.m */; };
+		AB260992260DD6F700C1EC31 /* LXFPopResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB260987260DD6F700C1EC31 /* LXFPopResultCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,22 +204,6 @@
 		043D903D21C10972001B1ABD /* LXFCalculatorBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFCalculatorBaseViewController.m; sourceTree = "<group>"; };
 		043D903E21C10972001B1ABD /* LXFCalculatorBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFCalculatorBaseViewController.h; sourceTree = "<group>"; };
 		043D903F21C10972001B1ABD /* LXFCalculatorFundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFCalculatorFundViewController.m; sourceTree = "<group>"; };
-		043D904121C10972001B1ABD /* LXFCalculateResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFCalculateResultModel.h; sourceTree = "<group>"; };
-		043D904221C10972001B1ABD /* LXFCalculateResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFCalculateResultModel.m; sourceTree = "<group>"; };
-		043D904421C10972001B1ABD /* LXFPopResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFPopResultView.h; sourceTree = "<group>"; };
-		043D904521C10972001B1ABD /* LXFCalculatorCalcBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFCalculatorCalcBtnView.h; sourceTree = "<group>"; };
-		043D904621C10972001B1ABD /* LXFCalcSelectStrCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFCalcSelectStrCell.m; sourceTree = "<group>"; };
-		043D904721C10972001B1ABD /* LXFPopResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFPopResultCell.h; sourceTree = "<group>"; };
-		043D904821C10972001B1ABD /* LXFCalcInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXFCalcInputCell.xib; sourceTree = "<group>"; };
-		043D904921C10972001B1ABD /* LXFCalcInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFCalcInputCell.m; sourceTree = "<group>"; };
-		043D904A21C10972001B1ABD /* LXFCalcSelectStrCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFCalcSelectStrCell.h; sourceTree = "<group>"; };
-		043D904B21C10972001B1ABD /* LXFCalculatorCalcBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFCalculatorCalcBtnView.m; sourceTree = "<group>"; };
-		043D904C21C10972001B1ABD /* LXFPopResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFPopResultView.m; sourceTree = "<group>"; };
-		043D904D21C10972001B1ABD /* LXFCalcSelectStrCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXFCalcSelectStrCell.xib; sourceTree = "<group>"; };
-		043D904E21C10972001B1ABD /* LXFCalculatorCalcBtnView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXFCalculatorCalcBtnView.xib; sourceTree = "<group>"; };
-		043D904F21C10972001B1ABD /* LXFPopResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFPopResultCell.m; sourceTree = "<group>"; };
-		043D905021C10972001B1ABD /* LXFPopResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXFPopResultCell.xib; sourceTree = "<group>"; };
-		043D905121C10972001B1ABD /* LXFCalcInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFCalcInputCell.h; sourceTree = "<group>"; };
 		043D905421C10972001B1ABD /* XLBasePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBasePageController.h; sourceTree = "<group>"; };
 		043D905521C10972001B1ABD /* XLBasePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBasePageController.m; sourceTree = "<group>"; };
 		043D905721C10972001B1ABD /* LCActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCActionSheet.h; sourceTree = "<group>"; };
@@ -399,18 +383,6 @@
 		043D912F21C10972001B1ABD /* EMDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMDiaryViewController.m; sourceTree = "<group>"; };
 		043D913021C10972001B1ABD /* EMDiaryShowHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMDiaryShowHeaderView.h; sourceTree = "<group>"; };
 		043D913121C10972001B1ABD /* EMDiaryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMDiaryTableViewCell.m; sourceTree = "<group>"; };
-		043D913321C10972001B1ABD /* EMSettingActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingActionCell.h; sourceTree = "<group>"; };
-		043D913421C10972001B1ABD /* EMSettingActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSettingActionSheet.m; sourceTree = "<group>"; };
-		043D913521C10972001B1ABD /* EMSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingTableViewCell.h; sourceTree = "<group>"; };
-		043D913621C10972001B1ABD /* EMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSettingViewController.m; sourceTree = "<group>"; };
-		043D913721C10972001B1ABD /* EMAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAboutUsViewController.h; sourceTree = "<group>"; };
-		043D913821C10972001B1ABD /* EMSettingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingHeaderView.h; sourceTree = "<group>"; };
-		043D913921C10972001B1ABD /* EMSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSettingTableViewCell.m; sourceTree = "<group>"; };
-		043D913A21C10972001B1ABD /* EMSettingActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingActionSheet.h; sourceTree = "<group>"; };
-		043D913B21C10972001B1ABD /* EMSettingActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSettingActionCell.m; sourceTree = "<group>"; };
-		043D913C21C10972001B1ABD /* EMAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAboutUsViewController.m; sourceTree = "<group>"; };
-		043D913D21C10972001B1ABD /* EMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingViewController.h; sourceTree = "<group>"; };
-		043D913E21C10972001B1ABD /* EMSettingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSettingHeaderView.m; sourceTree = "<group>"; };
 		043D914021C10972001B1ABD /* EMPlacePublishSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPlacePublishSheet.h; sourceTree = "<group>"; };
 		043D914121C10972001B1ABD /* EMCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCardCollectionViewCell.m; sourceTree = "<group>"; };
 		043D914221C10972001B1ABD /* EMCardSelectedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCardSelectedLayout.m; sourceTree = "<group>"; };
@@ -472,9 +444,6 @@
 		049EAD4B21C166F5000ADAE4 /* SQPrintJsonLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPrintJsonLog.m; sourceTree = "<group>"; };
 		04C0A1EE21C7761800503ADA /* SXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXAlertView.m; sourceTree = "<group>"; };
 		04C0A1EF21C7761800503ADA /* SXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXAlertView.h; sourceTree = "<group>"; };
-		04C0A1F121C7785400503ADA /* suggestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = suggestViewController.m; sourceTree = "<group>"; };
-		04C0A1F221C7785400503ADA /* suggestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = suggestViewController.xib; sourceTree = "<group>"; };
-		04C0A1F321C7785400503ADA /* suggestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = suggestViewController.h; sourceTree = "<group>"; };
 		04C0A1F721C7796B00503ADA /* XXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTextView.h; sourceTree = "<group>"; };
 		04C0A1F821C7796B00503ADA /* XXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTextView.m; sourceTree = "<group>"; };
 		04C1A4532189C81300967956 /* text.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = text.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -494,6 +463,37 @@
 		04DFAEB321CB7B260065D6E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		04DFAEB421CB7B260065D6E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0523D3F8F07DA5C778F66905 /* libPods-text.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-text.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB26095D260DD57200C1EC31 /* EMSettingActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingActionCell.h; sourceTree = "<group>"; };
+		AB26095E260DD57200C1EC31 /* suggestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = suggestViewController.m; sourceTree = "<group>"; };
+		AB26095F260DD57200C1EC31 /* EMSettingActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSettingActionSheet.m; sourceTree = "<group>"; };
+		AB260960260DD57200C1EC31 /* EMSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingTableViewCell.h; sourceTree = "<group>"; };
+		AB260961260DD57200C1EC31 /* EMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSettingViewController.m; sourceTree = "<group>"; };
+		AB260962260DD57200C1EC31 /* EMAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAboutUsViewController.h; sourceTree = "<group>"; };
+		AB260963260DD57200C1EC31 /* EMSettingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingHeaderView.h; sourceTree = "<group>"; };
+		AB260964260DD57200C1EC31 /* EMSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSettingTableViewCell.m; sourceTree = "<group>"; };
+		AB260965260DD57200C1EC31 /* suggestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = suggestViewController.h; sourceTree = "<group>"; };
+		AB260966260DD57200C1EC31 /* EMSettingActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingActionSheet.h; sourceTree = "<group>"; };
+		AB260967260DD57200C1EC31 /* EMSettingActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSettingActionCell.m; sourceTree = "<group>"; };
+		AB260968260DD57200C1EC31 /* EMAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAboutUsViewController.m; sourceTree = "<group>"; };
+		AB260969260DD57200C1EC31 /* EMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSettingViewController.h; sourceTree = "<group>"; };
+		AB26096A260DD57200C1EC31 /* suggestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = suggestViewController.xib; sourceTree = "<group>"; };
+		AB26096B260DD57200C1EC31 /* EMSettingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSettingHeaderView.m; sourceTree = "<group>"; };
+		AB260978260DD6F700C1EC31 /* LXFCalculateResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFCalculateResultModel.h; sourceTree = "<group>"; };
+		AB260979260DD6F700C1EC31 /* LXFCalculateResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFCalculateResultModel.m; sourceTree = "<group>"; };
+		AB26097B260DD6F700C1EC31 /* LXFPopResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFPopResultView.h; sourceTree = "<group>"; };
+		AB26097C260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFCalculatorCalcBtnView.h; sourceTree = "<group>"; };
+		AB26097D260DD6F700C1EC31 /* LXFCalcSelectStrCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFCalcSelectStrCell.m; sourceTree = "<group>"; };
+		AB26097E260DD6F700C1EC31 /* LXFPopResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFPopResultCell.h; sourceTree = "<group>"; };
+		AB26097F260DD6F700C1EC31 /* LXFCalcInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXFCalcInputCell.xib; sourceTree = "<group>"; };
+		AB260980260DD6F700C1EC31 /* LXFCalcInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFCalcInputCell.m; sourceTree = "<group>"; };
+		AB260981260DD6F700C1EC31 /* LXFCalcSelectStrCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFCalcSelectStrCell.h; sourceTree = "<group>"; };
+		AB260982260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFCalculatorCalcBtnView.m; sourceTree = "<group>"; };
+		AB260983260DD6F700C1EC31 /* LXFPopResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFPopResultView.m; sourceTree = "<group>"; };
+		AB260984260DD6F700C1EC31 /* LXFCalcSelectStrCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXFCalcSelectStrCell.xib; sourceTree = "<group>"; };
+		AB260985260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXFCalculatorCalcBtnView.xib; sourceTree = "<group>"; };
+		AB260986260DD6F700C1EC31 /* LXFPopResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFPopResultCell.m; sourceTree = "<group>"; };
+		AB260987260DD6F700C1EC31 /* LXFPopResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXFPopResultCell.xib; sourceTree = "<group>"; };
+		AB260988260DD6F700C1EC31 /* LXFCalcInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFCalcInputCell.h; sourceTree = "<group>"; };
 		AC0D50A788785C7340DD7A23 /* Pods-text.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-text.release.xcconfig"; path = "Pods/Target Support Files/Pods-text/Pods-text.release.xcconfig"; sourceTree = "<group>"; };
 		FC5AF1FDB16C25FA18F45674 /* Pods-text.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-text.debug.xcconfig"; path = "Pods/Target Support Files/Pods-text/Pods-text.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -563,10 +563,10 @@
 		043D902C21C10971001B1ABD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AB260977260DD6F700C1EC31 /* HYFModel */,
+				AB26097A260DD6F700C1EC31 /* HYFView */,
 				043D902D21C10971001B1ABD /* Category */,
 				043D903421C10972001B1ABD /* Controller */,
-				043D904021C10972001B1ABD /* Model */,
-				043D904321C10972001B1ABD /* View */,
 				043D905221C10972001B1ABD /* Lib */,
 			);
 			path = Classes;
@@ -608,36 +608,6 @@
 				043D903E21C10972001B1ABD /* LXFCalculatorBaseViewController.h */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		043D904021C10972001B1ABD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				043D904121C10972001B1ABD /* LXFCalculateResultModel.h */,
-				043D904221C10972001B1ABD /* LXFCalculateResultModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		043D904321C10972001B1ABD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				043D904421C10972001B1ABD /* LXFPopResultView.h */,
-				043D904521C10972001B1ABD /* LXFCalculatorCalcBtnView.h */,
-				043D904621C10972001B1ABD /* LXFCalcSelectStrCell.m */,
-				043D904721C10972001B1ABD /* LXFPopResultCell.h */,
-				043D904821C10972001B1ABD /* LXFCalcInputCell.xib */,
-				043D904921C10972001B1ABD /* LXFCalcInputCell.m */,
-				043D904A21C10972001B1ABD /* LXFCalcSelectStrCell.h */,
-				043D904B21C10972001B1ABD /* LXFCalculatorCalcBtnView.m */,
-				043D904C21C10972001B1ABD /* LXFPopResultView.m */,
-				043D904D21C10972001B1ABD /* LXFCalcSelectStrCell.xib */,
-				043D904E21C10972001B1ABD /* LXFCalculatorCalcBtnView.xib */,
-				043D904F21C10972001B1ABD /* LXFPopResultCell.m */,
-				043D905021C10972001B1ABD /* LXFPopResultCell.xib */,
-				043D905121C10972001B1ABD /* LXFCalcInputCell.h */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		043D905221C10972001B1ABD /* Lib */ = {
@@ -1070,7 +1040,6 @@
 				043D910921C10972001B1ABD /* Alert */,
 				043D911421C10972001B1ABD /* BigDay */,
 				043D912121C10972001B1ABD /* Diary */,
-				043D913221C10972001B1ABD /* Setting */,
 				043D913F21C10972001B1ABD /* Place */,
 				043D914A21C10972001B1ABD /* Base */,
 			);
@@ -1174,28 +1143,6 @@
 				043D913121C10972001B1ABD /* EMDiaryTableViewCell.m */,
 			);
 			path = Diary;
-			sourceTree = "<group>";
-		};
-		043D913221C10972001B1ABD /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				043D913D21C10972001B1ABD /* EMSettingViewController.h */,
-				043D913621C10972001B1ABD /* EMSettingViewController.m */,
-				043D913721C10972001B1ABD /* EMAboutUsViewController.h */,
-				043D913C21C10972001B1ABD /* EMAboutUsViewController.m */,
-				04C0A1F321C7785400503ADA /* suggestViewController.h */,
-				04C0A1F121C7785400503ADA /* suggestViewController.m */,
-				04C0A1F221C7785400503ADA /* suggestViewController.xib */,
-				043D913321C10972001B1ABD /* EMSettingActionCell.h */,
-				043D913421C10972001B1ABD /* EMSettingActionSheet.m */,
-				043D913521C10972001B1ABD /* EMSettingTableViewCell.h */,
-				043D913821C10972001B1ABD /* EMSettingHeaderView.h */,
-				043D913921C10972001B1ABD /* EMSettingTableViewCell.m */,
-				043D913A21C10972001B1ABD /* EMSettingActionSheet.h */,
-				043D913B21C10972001B1ABD /* EMSettingActionCell.m */,
-				043D913E21C10972001B1ABD /* EMSettingHeaderView.m */,
-			);
-			path = Setting;
 			sourceTree = "<group>";
 		};
 		043D913F21C10972001B1ABD /* Place */ = {
@@ -1317,6 +1264,7 @@
 		049EAD4421C166F5000ADAE4 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				AB26095C260DD57200C1EC31 /* Setting */,
 				04C0A1F621C7796B00503ADA /* XXTextView */,
 				04C0A1ED21C7761800503ADA /* SXAlertView */,
 				049EAD4521C166F5000ADAE4 /* XYTransition */,
@@ -1435,6 +1383,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AB26095C260DD57200C1EC31 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				AB26095D260DD57200C1EC31 /* EMSettingActionCell.h */,
+				AB26095E260DD57200C1EC31 /* suggestViewController.m */,
+				AB26095F260DD57200C1EC31 /* EMSettingActionSheet.m */,
+				AB260960260DD57200C1EC31 /* EMSettingTableViewCell.h */,
+				AB260961260DD57200C1EC31 /* EMSettingViewController.m */,
+				AB260962260DD57200C1EC31 /* EMAboutUsViewController.h */,
+				AB260963260DD57200C1EC31 /* EMSettingHeaderView.h */,
+				AB260964260DD57200C1EC31 /* EMSettingTableViewCell.m */,
+				AB260965260DD57200C1EC31 /* suggestViewController.h */,
+				AB260966260DD57200C1EC31 /* EMSettingActionSheet.h */,
+				AB260967260DD57200C1EC31 /* EMSettingActionCell.m */,
+				AB260968260DD57200C1EC31 /* EMAboutUsViewController.m */,
+				AB260969260DD57200C1EC31 /* EMSettingViewController.h */,
+				AB26096A260DD57200C1EC31 /* suggestViewController.xib */,
+				AB26096B260DD57200C1EC31 /* EMSettingHeaderView.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		AB260977260DD6F700C1EC31 /* HYFModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB260978260DD6F700C1EC31 /* LXFCalculateResultModel.h */,
+				AB260979260DD6F700C1EC31 /* LXFCalculateResultModel.m */,
+			);
+			path = HYFModel;
+			sourceTree = "<group>";
+		};
+		AB26097A260DD6F700C1EC31 /* HYFView */ = {
+			isa = PBXGroup;
+			children = (
+				AB26097B260DD6F700C1EC31 /* LXFPopResultView.h */,
+				AB26097C260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.h */,
+				AB26097D260DD6F700C1EC31 /* LXFCalcSelectStrCell.m */,
+				AB26097E260DD6F700C1EC31 /* LXFPopResultCell.h */,
+				AB26097F260DD6F700C1EC31 /* LXFCalcInputCell.xib */,
+				AB260980260DD6F700C1EC31 /* LXFCalcInputCell.m */,
+				AB260981260DD6F700C1EC31 /* LXFCalcSelectStrCell.h */,
+				AB260982260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.m */,
+				AB260983260DD6F700C1EC31 /* LXFPopResultView.m */,
+				AB260984260DD6F700C1EC31 /* LXFCalcSelectStrCell.xib */,
+				AB260985260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.xib */,
+				AB260986260DD6F700C1EC31 /* LXFPopResultCell.m */,
+				AB260987260DD6F700C1EC31 /* LXFPopResultCell.xib */,
+				AB260988260DD6F700C1EC31 /* LXFCalcInputCell.h */,
+			);
+			path = HYFView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1541,13 +1541,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C1A4632189C81600967956 /* LaunchScreen.storyboard in Resources */,
-				043D917121C10972001B1ABD /* LXFCalculatorCalcBtnView.xib in Resources */,
+				AB260990260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.xib in Resources */,
 				04C1A4602189C81600967956 /* Assets.xcassets in Resources */,
-				04C0A1F521C7785400503ADA /* suggestViewController.xib in Resources */,
-				043D917321C10972001B1ABD /* LXFPopResultCell.xib in Resources */,
-				043D917021C10972001B1ABD /* LXFCalcSelectStrCell.xib in Resources */,
-				043D916C21C10972001B1ABD /* LXFCalcInputCell.xib in Resources */,
+				AB26098B260DD6F700C1EC31 /* LXFCalcInputCell.xib in Resources */,
+				AB260972260DD57200C1EC31 /* suggestViewController.xib in Resources */,
+				AB260992260DD6F700C1EC31 /* LXFPopResultCell.xib in Resources */,
 				04C1A45E2189C81400967956 /* Main.storyboard in Resources */,
+				AB26098F260DD6F700C1EC31 /* LXFCalcSelectStrCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1617,7 +1617,6 @@
 				043D917E21C10972001B1ABD /* FSMediaPicker.m in Sources */,
 				043D91A821C10972001B1ABD /* EMBaseDatabaseProvider.m in Sources */,
 				043D91B221C10972001B1ABD /* EMBillTableViewCell.m in Sources */,
-				04C0A1F421C7785400503ADA /* suggestViewController.m in Sources */,
 				043D918B21C10972001B1ABD /* EMBillHandler.m in Sources */,
 				043D918821C10972001B1ABD /* EMHomeHeadInfo.m in Sources */,
 				043D917721C10972001B1ABD /* UIImage+LCActionSheet.m in Sources */,
@@ -1638,16 +1637,16 @@
 				043D91DB21C10972001B1ABD /* EMPlaceHolderTextView.m in Sources */,
 				043D916921C10972001B1ABD /* LXFCalculatorFundViewController.m in Sources */,
 				043D91B721C10972001B1ABD /* EMPublishBillEditTableViewCell.m in Sources */,
-				043D91CD21C10972001B1ABD /* EMSettingActionSheet.m in Sources */,
+				AB26098D260DD6F700C1EC31 /* LXFCalculatorCalcBtnView.m in Sources */,
 				043D91BF21C10972001B1ABD /* EMBigDayCollectionViewCell.m in Sources */,
-				043D91D121C10972001B1ABD /* EMAboutUsViewController.m in Sources */,
 				043D91D321C10972001B1ABD /* EMCardCollectionViewCell.m in Sources */,
 				043D919621C10972001B1ABD /* EMAlertManager.m in Sources */,
 				043D916721C10972001B1ABD /* LXFCalculatorGroupViewController.m in Sources */,
 				043D918321C10972001B1ABD /* EMProgressLoopView.m in Sources */,
+				AB260973260DD57200C1EC31 /* EMSettingHeaderView.m in Sources */,
 				043D918521C10972001B1ABD /* EMTipsView.m in Sources */,
 				043D91B121C10972001B1ABD /* EMPublishBillViewController.m in Sources */,
-				043D916D21C10972001B1ABD /* LXFCalcInputCell.m in Sources */,
+				AB26098A260DD6F700C1EC31 /* LXFCalcSelectStrCell.m in Sources */,
 				043D91BB21C10972001B1ABD /* EMPublishAlertEditTableViewCell.m in Sources */,
 				043D919121C10972001B1ABD /* EMBillManager.m in Sources */,
 				043D91A521C10972001B1ABD /* EMBaseLRUCacheProvider.m in Sources */,
@@ -1660,6 +1659,7 @@
 				043D91D821C10972001B1ABD /* EMDatePicker.m in Sources */,
 				043D918E21C10972001B1ABD /* EMBillTypeInfo.m in Sources */,
 				043D91BA21C10972001B1ABD /* EMAlertViewController.m in Sources */,
+				AB26096C260DD57200C1EC31 /* suggestViewController.m in Sources */,
 				043D91D721C10972001B1ABD /* EMPlaceViewController.m in Sources */,
 				043D91CA21C10972001B1ABD /* EMDiaryNoPicTableViewCell.m in Sources */,
 				043D918421C10972001B1ABD /* EMLogoLoopView.m in Sources */,
@@ -1677,8 +1677,9 @@
 				043D91A321C10972001B1ABD /* EMPlaceManager.m in Sources */,
 				043D918D21C10972001B1ABD /* EMBillMonthInfo.m in Sources */,
 				043D918A21C10972001B1ABD /* EMHomeManager.m in Sources */,
+				AB26096D260DD57200C1EC31 /* EMSettingActionSheet.m in Sources */,
+				AB260989260DD6F700C1EC31 /* LXFCalculateResultModel.m in Sources */,
 				043D91B021C10972001B1ABD /* EMBillViewController.m in Sources */,
-				043D91D021C10972001B1ABD /* EMSettingActionCell.m in Sources */,
 				043D919821C10972001B1ABD /* EMBigDayInfo.m in Sources */,
 				043D91B521C10972001B1ABD /* EMMonthBillLegend.m in Sources */,
 				048179A521C23B5C00476943 /* TestTabBar.m in Sources */,
@@ -1692,7 +1693,6 @@
 				043D916621C10972001B1ABD /* LXFCalculatorViewController.m in Sources */,
 				043D91A621C10972001B1ABD /* EMBaseDatabaseCommonProvider.m in Sources */,
 				043D917921C10972001B1ABD /* LCActionSheet.m in Sources */,
-				043D916B21C10972001B1ABD /* LXFCalcSelectStrCell.m in Sources */,
 				043D917B21C10972001B1ABD /* GKImageCropOverlayView.m in Sources */,
 				043D919921C10972001B1ABD /* EMBigDayItemInfo.m in Sources */,
 				043D918021C10972001B1ABD /* UIView+EMTips.m in Sources */,
@@ -1709,6 +1709,7 @@
 				043D91E221C10972001B1ABD /* MyToolViewController.m in Sources */,
 				04C1A4662189C81600967956 /* main.m in Sources */,
 				043D917621C10972001B1ABD /* LCActionSheetCell.m in Sources */,
+				AB26098C260DD6F700C1EC31 /* LXFCalcInputCell.m in Sources */,
 				04C0A1F921C7796B00503ADA /* XXTextView.m in Sources */,
 				043D91BC21C10972001B1ABD /* EMPublishAlertViewController.m in Sources */,
 				049EAD4021C16024000ADAE4 /* AppDelegate+AppService.m in Sources */,
@@ -1716,12 +1717,7 @@
 				043D91C821C10972001B1ABD /* EMDiaryEditViewController.m in Sources */,
 				043D91AA21C10972001B1ABD /* EMQueueDef.m in Sources */,
 				04DFAEB521CB7B260065D6E3 /* ViewController.m in Sources */,
-				043D91CF21C10972001B1ABD /* EMSettingTableViewCell.m in Sources */,
 				043D918C21C10972001B1ABD /* EMBillInfo.m in Sources */,
-				043D916E21C10972001B1ABD /* LXFCalculatorCalcBtnView.m in Sources */,
-				043D91CE21C10972001B1ABD /* EMSettingViewController.m in Sources */,
-				043D916F21C10972001B1ABD /* LXFPopResultView.m in Sources */,
-				043D91D221C10972001B1ABD /* EMSettingHeaderView.m in Sources */,
 				043D91C521C10972001B1ABD /* EMPublishDiaryViewController.m in Sources */,
 				043D918721C10972001B1ABD /* EMAlertConfigInfo.m in Sources */,
 				043D91CB21C10972001B1ABD /* EMDiaryViewController.m in Sources */,
@@ -1731,28 +1727,32 @@
 				043D919521C10972001B1ABD /* EMAlertCacheProvider.m in Sources */,
 				043D91A121C10972001B1ABD /* EMPlaceInfo.m in Sources */,
 				043D916821C10972001B1ABD /* LXFCalculatorBaseViewController.m in Sources */,
+				AB26098E260DD6F700C1EC31 /* LXFPopResultView.m in Sources */,
 				043D91B821C10972001B1ABD /* EMMonthBillViewController.m in Sources */,
 				04C1A4582189C81400967956 /* AppDelegate.m in Sources */,
 				043D917F21C10972001B1ABD /* GKCropBorderView.m in Sources */,
 				043D916321C10972001B1ABD /* NSArray+LXF.m in Sources */,
-				043D916A21C10972001B1ABD /* LXFCalculateResultModel.m in Sources */,
 				043D91DC21C10972001B1ABD /* EMTheme.m in Sources */,
-				043D917221C10972001B1ABD /* LXFPopResultCell.m in Sources */,
 				043D91A721C10972001B1ABD /* EMBaseDataProvider.m in Sources */,
 				043D919021C10972001B1ABD /* EMBillCacheProvider.m in Sources */,
 				043D916221C10972001B1ABD /* UITableViewCell+LXF.m in Sources */,
+				AB260970260DD57200C1EC31 /* EMSettingActionCell.m in Sources */,
 				049EAD3B21C16024000ADAE4 /* UITabBar+CustomBadge.m in Sources */,
 				048179C321C4D21800476943 /* OtherViewController.m in Sources */,
 				043D91B321C10972001B1ABD /* EMMonthBillTableViewCell.m in Sources */,
 				043D91C921C10972001B1ABD /* EMDiaryShowViewController.m in Sources */,
 				043D918F21C10972001B1ABD /* EMBillItemInfo.m in Sources */,
+				AB260971260DD57200C1EC31 /* EMAboutUsViewController.m in Sources */,
 				043D917421C10972001B1ABD /* XLBasePageController.m in Sources */,
 				043D91AE21C10972001B1ABD /* EMHomeViewController.m in Sources */,
+				AB260991260DD6F700C1EC31 /* LXFPopResultCell.m in Sources */,
 				043D916521C10972001B1ABD /* LXFCalculatorBusinessViewController.m in Sources */,
 				043D91DE21C10972001B1ABD /* EMVerticallyAlignedLabel.m in Sources */,
+				AB26096E260DD57200C1EC31 /* EMSettingViewController.m in Sources */,
 				049EAD4C21C166F5000ADAE4 /* XYTransition.m in Sources */,
 				043D919221C10972001B1ABD /* EMAlertHandler.m in Sources */,
 				043D91DA21C10972001B1ABD /* EMMaskView.m in Sources */,
+				AB26096F260DD57200C1EC31 /* EMSettingTableViewCell.m in Sources */,
 				043D91B421C10972001B1ABD /* EMBillHeaderView.m in Sources */,
 				043D919A21C10972001B1ABD /* EMBigDayCacheProvider.m in Sources */,
 				043D91D621C10972001B1ABD /* EMPlacePublishSheet.m in Sources */,
