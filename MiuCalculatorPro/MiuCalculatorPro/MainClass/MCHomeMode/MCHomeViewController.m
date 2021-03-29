@@ -35,11 +35,8 @@
     
     self.dataArray = NSMutableArray.array;
     
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        [self orientChange:nil];
-    } else {
-        [self createCalculateUIForPhone];
-    }
+    //只做适配iphone的计算器界面
+    [self createCalculateUIForPhone];
     
     [self.view sendSubviewToBack:self.bgImgView];
     
@@ -291,41 +288,7 @@
     }
 }
 
-static NSInteger count = 6;
-- (void)createOrUpdateCalculateUIForPad {
-    UIDeviceOrientation orient = [UIDevice currentDevice].orientation;
-    
-    if (orient == UIDeviceOrientationLandscapeLeft || orient == UIDeviceOrientationLandscapeRight) {
-        // 横向 32
-        NSArray *arr = @[@[@"",      @"%",   @"+-",  @"7",   @"8",   @"9",   @"+",   @"off"],
-                         @[@"",      @"(",   @")",   @"4",   @"5",   @"6",   @"-",   @"AC"],
-                         @[@"设置",   @"^",   @"x^2", @"1",   @"2",   @"3",   @"*",   @"Del"],
-                         @[@"历史",   @"√",   @"2√x", @"0",   @"00",  @".",   @"/",   @"="]];
-        [self.dataArray removeAllObjects];
-        [self.dataArray addObjectsFromArray:arr];
-        count = 8;
-    } else if (orient == UIDeviceOrientationPortrait || orient == UIDeviceOrientationPortraitUpsideDown) {
-        NSArray *arr = @[@[@"+-",  @"(",   @")",   @"%",   @"设置", @"历史"],
-                         @[@"^",   @"7",   @"8",   @"9",   @"+",   @"off"],
-                         @[@"x^2", @"4",   @"5",   @"6",   @"-",   @"AC"],
-                         @[@"√",   @"1",   @"2",   @"3",   @"*",   @"Del"],
-                         @[@"2√x", @"0",   @"00",  @".",   @"/",   @"="]];
-        [self.dataArray removeAllObjects];
-        [self.dataArray addObjectsFromArray:arr];
-        count = 6;
-    }
-    
-    
-    _itemHeight = (kScreenWidth - 5 * (count + 1)) / count;
-    
-    CGFloat collectionViewHeight = (_itemHeight + 5) * self.dataArray.count;
-    NSLog(@"collectionViewHeight:%f", collectionViewHeight);
-    self.myCollectionView.sd_layout.heightIs(collectionViewHeight);
-    
-    [self.myCollectionView reloadData];
-    
-    [self layoutViews];
-}
+
 
 - (void)createCalculateUIForPhone {
     NSArray *arr = @[@[@"√",   @"2√x", @"^",   @"x^2", @"设置"],
