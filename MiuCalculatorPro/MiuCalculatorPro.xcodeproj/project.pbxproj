@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB86CD51260EE0B6009D46B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD50260EE0B6009D46B6 /* AppDelegate.m */; };
-		AB86CD54260EE0B6009D46B6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD53260EE0B6009D46B6 /* SceneDelegate.m */; };
-		AB86CD57260EE0B6009D46B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD56260EE0B6009D46B6 /* ViewController.m */; };
+		11E86C93AAE3BEE62496F504 /* Pods_MiuCalculatorProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EEF1266801CC842EDB4C26 /* Pods_MiuCalculatorProTests.framework */; };
+		7905074BEAB2E3DCDCFB5428 /* Pods_MiuCalculatorPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBEF0B21AEB91AB07510653 /* Pods_MiuCalculatorPro.framework */; };
+		9B34341ABD84EC5C95FC0682 /* Pods_MiuCalculatorPro_MiuCalculatorProUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369C61B9FF2DE3D6C321523C /* Pods_MiuCalculatorPro_MiuCalculatorProUITests.framework */; };
 		AB86CD5A260EE0B6009D46B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB86CD58260EE0B6009D46B6 /* Main.storyboard */; };
 		AB86CD5C260EE0B8009D46B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB86CD5B260EE0B8009D46B6 /* Assets.xcassets */; };
 		AB86CD5F260EE0B8009D46B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB86CD5D260EE0B8009D46B6 /* LaunchScreen.storyboard */; };
 		AB86CD62260EE0B8009D46B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD61260EE0B8009D46B6 /* main.m */; };
 		AB86CD6C260EE0B9009D46B6 /* MiuCalculatorProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD6B260EE0B9009D46B6 /* MiuCalculatorProTests.m */; };
 		AB86CD77260EE0B9009D46B6 /* MiuCalculatorProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD76260EE0B9009D46B6 /* MiuCalculatorProUITests.m */; };
+		AB86CD9A26116909009D46B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD9426116909009D46B6 /* ViewController.m */; };
+		AB86CD9B26116909009D46B6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD9526116909009D46B6 /* SceneDelegate.m */; };
+		AB86CD9C26116909009D46B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD9626116909009D46B6 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BA587152D6E8147204E5473 /* Pods-MiuCalculatorPro-MiuCalculatorProUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiuCalculatorPro-MiuCalculatorProUITests.debug.xcconfig"; path = "Target Support Files/Pods-MiuCalculatorPro-MiuCalculatorProUITests/Pods-MiuCalculatorPro-MiuCalculatorProUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0CBEF0B21AEB91AB07510653 /* Pods_MiuCalculatorPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiuCalculatorPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F63C3B53BDA1167C9411B49 /* Pods-MiuCalculatorPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiuCalculatorPro.debug.xcconfig"; path = "Target Support Files/Pods-MiuCalculatorPro/Pods-MiuCalculatorPro.debug.xcconfig"; sourceTree = "<group>"; };
+		369C61B9FF2DE3D6C321523C /* Pods_MiuCalculatorPro_MiuCalculatorProUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiuCalculatorPro_MiuCalculatorProUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5734BB63E43579DA1BF915AD /* Pods-MiuCalculatorPro-MiuCalculatorProUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiuCalculatorPro-MiuCalculatorProUITests.release.xcconfig"; path = "Target Support Files/Pods-MiuCalculatorPro-MiuCalculatorProUITests/Pods-MiuCalculatorPro-MiuCalculatorProUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D3FBE2FB3C69851888B5AD3 /* Pods-MiuCalculatorProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiuCalculatorProTests.release.xcconfig"; path = "Target Support Files/Pods-MiuCalculatorProTests/Pods-MiuCalculatorProTests.release.xcconfig"; sourceTree = "<group>"; };
+		787CF7A25D538DC56B64A6D2 /* Pods-MiuCalculatorPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiuCalculatorPro.release.xcconfig"; path = "Target Support Files/Pods-MiuCalculatorPro/Pods-MiuCalculatorPro.release.xcconfig"; sourceTree = "<group>"; };
 		AB86CD4C260EE0B6009D46B6 /* MiuCalculatorPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiuCalculatorPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB86CD4F260EE0B6009D46B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AB86CD50260EE0B6009D46B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AB86CD52260EE0B6009D46B6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		AB86CD53260EE0B6009D46B6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		AB86CD55260EE0B6009D46B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AB86CD56260EE0B6009D46B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AB86CD59260EE0B6009D46B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB86CD5B260EE0B8009D46B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB86CD5E260EE0B8009D46B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 		AB86CD72260EE0B9009D46B6 /* MiuCalculatorProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiuCalculatorProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB86CD76260EE0B9009D46B6 /* MiuCalculatorProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiuCalculatorProUITests.m; sourceTree = "<group>"; };
 		AB86CD78260EE0B9009D46B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB86CD9326116909009D46B6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB86CD9426116909009D46B6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB86CD9526116909009D46B6 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		AB86CD9626116909009D46B6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB86CD9726116909009D46B6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB86CD9826116909009D46B6 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		AB86CDAB261169D4009D46B6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C09A28EDDBABB42294EFAB75 /* Pods-MiuCalculatorProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiuCalculatorProTests.debug.xcconfig"; path = "Target Support Files/Pods-MiuCalculatorProTests/Pods-MiuCalculatorProTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2EEF1266801CC842EDB4C26 /* Pods_MiuCalculatorProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiuCalculatorProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7905074BEAB2E3DCDCFB5428 /* Pods_MiuCalculatorPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E86C93AAE3BEE62496F504 /* Pods_MiuCalculatorProTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B34341ABD84EC5C95FC0682 /* Pods_MiuCalculatorPro_MiuCalculatorProUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CC6D9222553570410DBB1EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F63C3B53BDA1167C9411B49 /* Pods-MiuCalculatorPro.debug.xcconfig */,
+				787CF7A25D538DC56B64A6D2 /* Pods-MiuCalculatorPro.release.xcconfig */,
+				0BA587152D6E8147204E5473 /* Pods-MiuCalculatorPro-MiuCalculatorProUITests.debug.xcconfig */,
+				5734BB63E43579DA1BF915AD /* Pods-MiuCalculatorPro-MiuCalculatorProUITests.release.xcconfig */,
+				C09A28EDDBABB42294EFAB75 /* Pods-MiuCalculatorProTests.debug.xcconfig */,
+				5D3FBE2FB3C69851888B5AD3 /* Pods-MiuCalculatorProTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A94797C5B10083A09A673A05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CBEF0B21AEB91AB07510653 /* Pods_MiuCalculatorPro.framework */,
+				369C61B9FF2DE3D6C321523C /* Pods_MiuCalculatorPro_MiuCalculatorProUITests.framework */,
+				F2EEF1266801CC842EDB4C26 /* Pods_MiuCalculatorProTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB86CD43260EE0B6009D46B6 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +127,8 @@
 				AB86CD6A260EE0B9009D46B6 /* MiuCalculatorProTests */,
 				AB86CD75260EE0B9009D46B6 /* MiuCalculatorProUITests */,
 				AB86CD4D260EE0B6009D46B6 /* Products */,
+				6CC6D9222553570410DBB1EF /* Pods */,
+				A94797C5B10083A09A673A05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,17 +145,12 @@
 		AB86CD4E260EE0B6009D46B6 /* MiuCalculatorPro */ = {
 			isa = PBXGroup;
 			children = (
-				AB86CD4F260EE0B6009D46B6 /* AppDelegate.h */,
-				AB86CD50260EE0B6009D46B6 /* AppDelegate.m */,
-				AB86CD52260EE0B6009D46B6 /* SceneDelegate.h */,
-				AB86CD53260EE0B6009D46B6 /* SceneDelegate.m */,
-				AB86CD55260EE0B6009D46B6 /* ViewController.h */,
-				AB86CD56260EE0B6009D46B6 /* ViewController.m */,
-				AB86CD58260EE0B6009D46B6 /* Main.storyboard */,
-				AB86CD5B260EE0B8009D46B6 /* Assets.xcassets */,
-				AB86CD5D260EE0B8009D46B6 /* LaunchScreen.storyboard */,
+				AB86CD9226116909009D46B6 /* BaseVC */,
+				AB86CD9926116909009D46B6 /* MainClass */,
+				AB86CD9126116909009D46B6 /* Helper */,
+				AB86CD9026116909009D46B6 /* Tools */,
+				AB86CD8F26116909009D46B6 /* other */,
 				AB86CD60260EE0B8009D46B6 /* Info.plist */,
-				AB86CD61260EE0B8009D46B6 /* main.m */,
 			);
 			path = MiuCalculatorPro;
 			sourceTree = "<group>";
@@ -137,6 +173,52 @@
 			path = MiuCalculatorProUITests;
 			sourceTree = "<group>";
 		};
+		AB86CD8F26116909009D46B6 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				AB86CD58260EE0B6009D46B6 /* Main.storyboard */,
+				AB86CD5B260EE0B8009D46B6 /* Assets.xcassets */,
+				AB86CD5D260EE0B8009D46B6 /* LaunchScreen.storyboard */,
+				AB86CD61260EE0B8009D46B6 /* main.m */,
+				AB86CDAB261169D4009D46B6 /* PrefixHeader.pch */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		AB86CD9026116909009D46B6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		AB86CD9126116909009D46B6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		AB86CD9226116909009D46B6 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				AB86CD9326116909009D46B6 /* AppDelegate.h */,
+				AB86CD9426116909009D46B6 /* ViewController.m */,
+				AB86CD9526116909009D46B6 /* SceneDelegate.m */,
+				AB86CD9626116909009D46B6 /* AppDelegate.m */,
+				AB86CD9726116909009D46B6 /* ViewController.h */,
+				AB86CD9826116909009D46B6 /* SceneDelegate.h */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		AB86CD9926116909009D46B6 /* MainClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainClass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB86CD7B260EE0B9009D46B6 /* Build configuration list for PBXNativeTarget "MiuCalculatorPro" */;
 			buildPhases = (
+				47C4F7029BEBADD7078A86FA /* [CP] Check Pods Manifest.lock */,
 				AB86CD48260EE0B6009D46B6 /* Sources */,
 				AB86CD49260EE0B6009D46B6 /* Frameworks */,
 				AB86CD4A260EE0B6009D46B6 /* Resources */,
+				7F4F9F865E565A430FC3829F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB86CD7E260EE0B9009D46B6 /* Build configuration list for PBXNativeTarget "MiuCalculatorProTests" */;
 			buildPhases = (
+				BFBDE99CB13BDB0A3CF1252B /* [CP] Check Pods Manifest.lock */,
 				AB86CD63260EE0B9009D46B6 /* Sources */,
 				AB86CD64260EE0B9009D46B6 /* Frameworks */,
 				AB86CD65260EE0B9009D46B6 /* Resources */,
@@ -179,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB86CD81260EE0B9009D46B6 /* Build configuration list for PBXNativeTarget "MiuCalculatorProUITests" */;
 			buildPhases = (
+				9763DDBE099860759D71687A /* [CP] Check Pods Manifest.lock */,
 				AB86CD6E260EE0B9009D46B6 /* Sources */,
 				AB86CD6F260EE0B9009D46B6 /* Frameworks */,
 				AB86CD70260EE0B9009D46B6 /* Resources */,
+				AD0F1F1E703523198BA188D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,15 +348,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47C4F7029BEBADD7078A86FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiuCalculatorPro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F4F9F865E565A430FC3829F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiuCalculatorPro/Pods-MiuCalculatorPro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiuCalculatorPro/Pods-MiuCalculatorPro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiuCalculatorPro/Pods-MiuCalculatorPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9763DDBE099860759D71687A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiuCalculatorPro-MiuCalculatorProUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD0F1F1E703523198BA188D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiuCalculatorPro-MiuCalculatorProUITests/Pods-MiuCalculatorPro-MiuCalculatorProUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiuCalculatorPro-MiuCalculatorProUITests/Pods-MiuCalculatorPro-MiuCalculatorProUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiuCalculatorPro-MiuCalculatorProUITests/Pods-MiuCalculatorPro-MiuCalculatorProUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFBDE99CB13BDB0A3CF1252B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiuCalculatorProTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB86CD48260EE0B6009D46B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB86CD57260EE0B6009D46B6 /* ViewController.m in Sources */,
-				AB86CD51260EE0B6009D46B6 /* AppDelegate.m in Sources */,
+				AB86CD9C26116909009D46B6 /* AppDelegate.m in Sources */,
+				AB86CD9A26116909009D46B6 /* ViewController.m in Sources */,
+				AB86CD9B26116909009D46B6 /* SceneDelegate.m in Sources */,
 				AB86CD62260EE0B8009D46B6 /* main.m in Sources */,
-				AB86CD54260EE0B6009D46B6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +628,7 @@
 		};
 		AB86CD7C260EE0B9009D46B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F63C3B53BDA1167C9411B49 /* Pods-MiuCalculatorPro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +647,7 @@
 		};
 		AB86CD7D260EE0B9009D46B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 787CF7A25D538DC56B64A6D2 /* Pods-MiuCalculatorPro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,6 +666,7 @@
 		};
 		AB86CD7F260EE0B9009D46B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C09A28EDDBABB42294EFAB75 /* Pods-MiuCalculatorProTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +687,7 @@
 		};
 		AB86CD80260EE0B9009D46B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D3FBE2FB3C69851888B5AD3 /* Pods-MiuCalculatorProTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +708,7 @@
 		};
 		AB86CD82260EE0B9009D46B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BA587152D6E8147204E5473 /* Pods-MiuCalculatorPro-MiuCalculatorProUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J69V6VXM9A;
@@ -532,6 +727,7 @@
 		};
 		AB86CD83260EE0B9009D46B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5734BB63E43579DA1BF915AD /* Pods-MiuCalculatorPro-MiuCalculatorProUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J69V6VXM9A;

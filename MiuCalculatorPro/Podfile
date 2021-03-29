@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MiuCalculatorPro' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MiuCalculatorPro
+  pod 'SDAutoLayout'
+  pod 'FMDB'
+  target 'MiuCalculatorProTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MiuCalculatorProUITests' do
+    # Pods for testing
+  end
+
+end
