@@ -24,6 +24,13 @@
 		AB86CDC9261179CC009D46B6 /* NSDate+MCdate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CDC8261179CC009D46B6 /* NSDate+MCdate.m */; };
 		AB86CDD226117A9B009D46B6 /* MCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CDD126117A9B009D46B6 /* MCStack.m */; };
 		AB86CDD826117B3A009D46B6 /* MCCalculatorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CDD726117B3A009D46B6 /* MCCalculatorObject.m */; };
+		AB86CDEE26117D4E009D46B6 /* MCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CDED26117D4E009D46B6 /* MCBaseViewController.m */; };
+		AB86CDF426117D6E009D46B6 /* MCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CDF326117D6E009D46B6 /* MCNavigationController.m */; };
+		AB86CDFA26117D84009D46B6 /* MCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CDF926117D84009D46B6 /* MCHomeViewController.m */; };
+		AB86CE0326117F47009D46B6 /* UIImage+MCColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CE0226117F47009D46B6 /* UIImage+MCColorImage.m */; };
+		AB86CE0926117FEB009D46B6 /* MCHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CE0826117FEB009D46B6 /* MCHomeCollectionViewCell.m */; };
+		AB86CE0F261180A5009D46B6 /* MCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CE0E261180A5009D46B6 /* MCSettingViewController.m */; };
+		AB86CE15261180C1009D46B6 /* MCHSView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CE14261180C1009D46B6 /* MCHSView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +87,20 @@
 		AB86CDD126117A9B009D46B6 /* MCStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCStack.m; sourceTree = "<group>"; };
 		AB86CDD626117B3A009D46B6 /* MCCalculatorObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCCalculatorObject.h; sourceTree = "<group>"; };
 		AB86CDD726117B3A009D46B6 /* MCCalculatorObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCCalculatorObject.m; sourceTree = "<group>"; };
+		AB86CDEC26117D4E009D46B6 /* MCBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCBaseViewController.h; sourceTree = "<group>"; };
+		AB86CDED26117D4E009D46B6 /* MCBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCBaseViewController.m; sourceTree = "<group>"; };
+		AB86CDF226117D6E009D46B6 /* MCNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCNavigationController.h; sourceTree = "<group>"; };
+		AB86CDF326117D6E009D46B6 /* MCNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCNavigationController.m; sourceTree = "<group>"; };
+		AB86CDF826117D84009D46B6 /* MCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCHomeViewController.h; sourceTree = "<group>"; };
+		AB86CDF926117D84009D46B6 /* MCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCHomeViewController.m; sourceTree = "<group>"; };
+		AB86CE0126117F47009D46B6 /* UIImage+MCColorImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MCColorImage.h"; sourceTree = "<group>"; };
+		AB86CE0226117F47009D46B6 /* UIImage+MCColorImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MCColorImage.m"; sourceTree = "<group>"; };
+		AB86CE0726117FEB009D46B6 /* MCHomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCHomeCollectionViewCell.h; sourceTree = "<group>"; };
+		AB86CE0826117FEB009D46B6 /* MCHomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCHomeCollectionViewCell.m; sourceTree = "<group>"; };
+		AB86CE0D261180A5009D46B6 /* MCSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCSettingViewController.h; sourceTree = "<group>"; };
+		AB86CE0E261180A5009D46B6 /* MCSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSettingViewController.m; sourceTree = "<group>"; };
+		AB86CE13261180C1009D46B6 /* MCHSView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCHSView.h; sourceTree = "<group>"; };
+		AB86CE14261180C1009D46B6 /* MCHSView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCHSView.m; sourceTree = "<group>"; };
 		C09A28EDDBABB42294EFAB75 /* Pods-MiuCalculatorProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiuCalculatorProTests.debug.xcconfig"; path = "Target Support Files/Pods-MiuCalculatorProTests/Pods-MiuCalculatorProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2EEF1266801CC842EDB4C26 /* Pods_MiuCalculatorProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiuCalculatorProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -206,6 +227,8 @@
 				AB86CDB026116D27009D46B6 /* animation */,
 				AB86CDAF26116D27009D46B6 /* MCCategory */,
 				AB86CDB126116D27009D46B6 /* MCTool */,
+				AB86CE0126117F47009D46B6 /* UIImage+MCColorImage.h */,
+				AB86CE0226117F47009D46B6 /* UIImage+MCColorImage.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -224,10 +247,11 @@
 			children = (
 				AB86CD9326116909009D46B6 /* AppDelegate.h */,
 				AB86CD9426116909009D46B6 /* ViewController.m */,
+				AB86CD9826116909009D46B6 /* SceneDelegate.h */,
 				AB86CD9526116909009D46B6 /* SceneDelegate.m */,
 				AB86CD9626116909009D46B6 /* AppDelegate.m */,
 				AB86CD9726116909009D46B6 /* ViewController.h */,
-				AB86CD9826116909009D46B6 /* SceneDelegate.h */,
+				AB86CDDF26117D28009D46B6 /* BaseVC */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -235,6 +259,9 @@
 		AB86CD9926116909009D46B6 /* MainClass */ = {
 			isa = PBXGroup;
 			children = (
+				AB86CDDE26117CB6009D46B6 /* MCHomeMode */,
+				AB86CDDD26117CB6009D46B6 /* MCHistoryMode */,
+				AB86CDDC26117CB6009D46B6 /* MCSettingMode */,
 			);
 			path = MainClass;
 			sourceTree = "<group>";
@@ -266,6 +293,46 @@
 				AB86CDD726117B3A009D46B6 /* MCCalculatorObject.m */,
 			);
 			path = MCTool;
+			sourceTree = "<group>";
+		};
+		AB86CDDC26117CB6009D46B6 /* MCSettingMode */ = {
+			isa = PBXGroup;
+			children = (
+				AB86CE0D261180A5009D46B6 /* MCSettingViewController.h */,
+				AB86CE0E261180A5009D46B6 /* MCSettingViewController.m */,
+			);
+			path = MCSettingMode;
+			sourceTree = "<group>";
+		};
+		AB86CDDD26117CB6009D46B6 /* MCHistoryMode */ = {
+			isa = PBXGroup;
+			children = (
+				AB86CE13261180C1009D46B6 /* MCHSView.h */,
+				AB86CE14261180C1009D46B6 /* MCHSView.m */,
+			);
+			path = MCHistoryMode;
+			sourceTree = "<group>";
+		};
+		AB86CDDE26117CB6009D46B6 /* MCHomeMode */ = {
+			isa = PBXGroup;
+			children = (
+				AB86CDF826117D84009D46B6 /* MCHomeViewController.h */,
+				AB86CDF926117D84009D46B6 /* MCHomeViewController.m */,
+				AB86CE0726117FEB009D46B6 /* MCHomeCollectionViewCell.h */,
+				AB86CE0826117FEB009D46B6 /* MCHomeCollectionViewCell.m */,
+			);
+			path = MCHomeMode;
+			sourceTree = "<group>";
+		};
+		AB86CDDF26117D28009D46B6 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				AB86CDEC26117D4E009D46B6 /* MCBaseViewController.h */,
+				AB86CDED26117D4E009D46B6 /* MCBaseViewController.m */,
+				AB86CDF226117D6E009D46B6 /* MCNavigationController.h */,
+				AB86CDF326117D6E009D46B6 /* MCNavigationController.m */,
+			);
+			path = BaseVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,15 +572,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB86CE0326117F47009D46B6 /* UIImage+MCColorImage.m in Sources */,
+				AB86CE0F261180A5009D46B6 /* MCSettingViewController.m in Sources */,
 				AB86CD9C26116909009D46B6 /* AppDelegate.m in Sources */,
 				AB86CD9A26116909009D46B6 /* ViewController.m in Sources */,
 				AB86CDD226117A9B009D46B6 /* MCStack.m in Sources */,
 				AB86CDC9261179CC009D46B6 /* NSDate+MCdate.m in Sources */,
 				AB86CDB426116D8C009D46B6 /* MCAnimationManager.m in Sources */,
+				AB86CDFA26117D84009D46B6 /* MCHomeViewController.m in Sources */,
+				AB86CE0926117FEB009D46B6 /* MCHomeCollectionViewCell.m in Sources */,
+				AB86CDEE26117D4E009D46B6 /* MCBaseViewController.m in Sources */,
 				AB86CD9B26116909009D46B6 /* SceneDelegate.m in Sources */,
+				AB86CE15261180C1009D46B6 /* MCHSView.m in Sources */,
 				AB86CD62260EE0B8009D46B6 /* main.m in Sources */,
 				AB86CDD826117B3A009D46B6 /* MCCalculatorObject.m in Sources */,
 				AB86CDC3261178D0009D46B6 /* MCCalculatorManager.m in Sources */,
+				AB86CDF426117D6E009D46B6 /* MCNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,12 +9,13 @@
 #define PrefixHeader_pch
 
 #import "MCAnimationManager.h"
+#import "MCNavigationController.h"
+#import "MCHomeViewController.h"
+#import "UIImage+MCColorImage.h"
 
-
-
-
+#import <SDAutoLayout/SDAutoLayout.h>
 #define MC_HISTORY_DATA_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"MCCalculateHistoricalData.sqlite"]
-
+#define BG_IMG_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"bgimg.jpg"]
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight  [UIScreen mainScreen].bounds.size.height
 //字符串拼接
