@@ -10,7 +10,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AppDelegate (Method)
+-(UIViewController *)getCurrentUIVC;
+-(UIViewController *)getCurrentVC;
++ (AppDelegate *)shareAppDelegate;
 
+-(void)baseSet;
 @end
 
 NS_ASSUME_NONNULL_END

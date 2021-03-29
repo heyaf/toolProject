@@ -12,6 +12,9 @@
 #import "MCNavigationController.h"
 #import "MCHomeViewController.h"
 #import "UIImage+MCColorImage.h"
+#import "MCCalculatorManager.h"
+#import "AppDelegate.h"
+#import "AppDelegate+Method.h"
 
 #import <SDAutoLayout/SDAutoLayout.h>
 #define MC_HISTORY_DATA_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"MCCalculateHistoricalData.sqlite"]
@@ -38,6 +41,8 @@
 \
 [View.layer setCornerRadius:(Radius)];\
 [View.layer setMasksToBounds:YES]
+
+#define kISiPhoneXX (kScreenHeight > 810.0)
 
 
 //状态栏高度

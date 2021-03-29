@@ -10,6 +10,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MCsetDetailViewController : MCBaseViewController
+@property (nonatomic,strong) NSString *Title;
+
+@property (nonatomic,strong) NSString *message;
+
+@property (nonatomic,strong) NSString *hasKefu;
+
+
 
 @end
 

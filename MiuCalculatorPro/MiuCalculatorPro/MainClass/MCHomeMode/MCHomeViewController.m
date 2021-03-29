@@ -40,11 +40,11 @@
     
     [self.view sendSubviewToBack:self.bgImgView];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
     
     if (![NSUserDefaults.standardUserDefaults boolForKey:@"bgAnimation"]) {
         [self.view.layer addSublayer:MCAnimationManager.shardManager.animationWithSnow];
     }
+    [self setNavButton];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -57,7 +57,39 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+-(void)setNavButton{
 
+    
+    UIView *leftView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 60)];
+   UIButton *leftbtn =[UIButton buttonWithType:UIButtonTypeCustom];
+   leftbtn.frame = CGRectMake(-10, -5, 36, 36);
+   [leftbtn setImage:[UIImage imageNamed:@"history"] forState:UIControlStateNormal];
+   [leftbtn addTarget:self action:@selector(showHSView) forControlEvents:UIControlEventTouchUpInside];
+   [leftView addSubview:leftbtn];
+//   [self.view addSubview:leftView];
+   
+   self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftView];
+    
+    UIView *rightView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 60)];
+   UIButton *rightbtn =[UIButton buttonWithType:UIButtonTypeCustom];
+    rightbtn.frame = CGRectMake(25, -5, 36, 36);
+   [rightbtn setImage:[UIImage imageNamed:@"more_icon"] forState:UIControlStateNormal];
+   [rightbtn addTarget:self action:@selector(settingView) forControlEvents:UIControlEventTouchUpInside];
+   [rightView addSubview:rightbtn];
+//   [self.view addSubview:rightView];
+   
+   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightView];
+}
+//展示历史
+-(void)showHSView{
+    [[[AppDelegate shareAppDelegate] getCurrentVC].view addSubview:self.history];
+    [self.history showOrHidden];
+}
+
+-(void)settingView{
+    MCSettingViewController *newViewController = [[MCSettingViewController alloc] init];
+    [self.navigationController pushViewController:newViewController animated:YES];
+}
 #pragma mark - 懒加载
 - (UICollectionView *)myCollectionView {
     if (_myCollectionView == nil) {
@@ -85,7 +117,7 @@
             UIImage *img = [UIImage imageWithContentsOfFile:BG_IMG_PATH];
             _bgImgView.image = img;
         } else {
-            _bgImgView.image = [UIImage imageNamed:@"bgimg.jpg"];
+            _bgImgView.image = [UIImage imageNamed:@"03_bg"];
         }
         [self.view addSubview:self.bgImgView];
         _bgImgView.sd_layout
@@ -105,6 +137,7 @@
         _result.font = [UIFont systemFontOfSize:60];
         _result.textColor = kWhiteColor;
         _result.textAlignment = NSTextAlignmentRight;
+        _result.numberOfLines = 2;
         [self.view addSubview:_result];
     }
     return _result;
@@ -121,7 +154,7 @@
         _expres.inputView = UIView.new;
         _expres.inputView.hidden = YES;
         _expres.text = @"";
-        _expres.font = [UIFont systemFontOfSize:48];
+        _expres.font = [UIFont systemFontOfSize:36];
         _expres.textColor = kWhiteColor;
         _expres.textAlignment = NSTextAlignmentRight;
         [self.view addSubview:_expres];
@@ -150,7 +183,7 @@
     .leftSpaceToView(self.view, 5)
     .rightSpaceToView(self.view, 5)
     .bottomSpaceToView(self.result, 5)
-    .heightIs(60);
+    .heightIs(40);
 }
 
 
@@ -166,6 +199,9 @@
     MCHomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MCHomeCollectionViewCell" forIndexPath:indexPath];
     cell.itemHeight = _itemHeight;
     cell.title = self.dataArray[indexPath.section][indexPath.row];
+    if (indexPath.section==4&&indexPath.row==4) {
+        cell.backgroundColor = kRGB(0, 255, 255);
+    }
     return cell;
 }
 
@@ -175,6 +211,9 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    if (indexPath.section==4&&indexPath.row==3) {
+//        return CGSizeMake((int)_itemHeight+20, (int)_itemHeight);
+//    }
     return CGSizeMake((int)_itemHeight, (int)_itemHeight);
 }
 
@@ -222,35 +261,35 @@
 //            }
 //        };
         [self presentViewController:setting animated:YES completion:nil];
-    } else if ([string isEqualToString:@"历史"]) {
-        [self.view addSubview:self.history];
-#pragma message "warn one"
-        //TODO 显示历史
-//        [self.history showOrHidden];
     } else if ([string isEqualToString:@"x^2"]) {
         self.expres.text = [NSString stringWithFormat:@"%@%@", self.expres.text, @"^2"];
     } else if ([string isEqualToString:@"2√x"]) {
         self.expres.text = [NSString stringWithFormat:@"%@%@", self.expres.text, @"2√"];
-    } else if ([string isEqualToString:@"off"]) {
-        [self clickOffAction];
-    } else if ([string isEqualToString:@"AC"]) {
+    } else if ([string isEqualToString:@"%"]) {
+        self.expres.text = [NSString stringWithFormat:@"%@%@", self.expres.text, @"/100"];
+    } else if ([string isEqualToString:@"清空"]) {
         self.expres.text = @"";
         self.result.text = @"";
-    } else if ([string isEqualToString:@"Del"]) {
+    } else if ([string isEqualToString:@"删除"]) {
         [self clickDeleteAction];
         self.result.text = @"";
     } else if ([string isEqualToString:@"="]) {
         self.expres.text = [NSString stringWithFormat:@"%@%@", self.expres.text, string];
         self.result.text = [MCCalculatorObject calculator:self.expres.text];
         MCCalculatorManager *manager = MCCalculatorManager.sharedManager;
+        
+//        NSLog(@"加入数据库前%@",[manager getAllCalculate]);
+        
         [manager addCalculate:self.expres.text result:self.result.text];
+        
+//        NSLog(@"加入数据库后%@",[manager getAllCalculate]);
+
     } else {
         self.expres.text = [NSString stringWithFormat:@"%@%@", self.expres.text, string];
     }
 
     _preStr = string;
 }
-//TODO 显示历史
 - (void)clickOffAction {
     UIView *maskView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     maskView.backgroundColor = UIColor.blackColor;
@@ -280,30 +319,24 @@
 
 
 #pragma mark - 屏幕旋转
-- (void)orientChange:(NSNotification *)noti {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self createOrUpdateCalculateUIForPad];
-        });
-    }
-}
 
 
+static NSInteger count = 6;
 
 - (void)createCalculateUIForPhone {
-    NSArray *arr = @[@[@"√",   @"2√x", @"^",   @"x^2", @"设置"],
-                     @[@"(",   @")",   @"%",   @"+-",  @"历史"],
-                     @[@"7",   @"8",   @"9",   @"+",   @"off"],
-                     @[@"4",   @"5",   @"6",   @"-",   @"AC"],
-                     @[@"1",   @"2",   @"3",   @"*",   @"Del"],
-                     @[@"0",   @"00",  @".",   @"/",   @"="]];
+    NSArray *arr = @[
+                     @[@"(",   @")",   @"%",   @"^",     @"+"],
+                     @[@"7",   @"8",   @"9",   @"x^2",   @"-"],
+                     @[@"4",   @"5",   @"6",   @"2√x",   @"*"],
+                     @[@"1",   @"2",   @"3",   @"√",     @"/"],
+                     @[@"清空",  @"0",   @".",   @"删除",  @"="]];
     [self.dataArray removeAllObjects];
     [self.dataArray addObjectsFromArray:arr];
     count = 5;
     
     _itemHeight = (kScreenWidth - 5 * (count + 1)) / count;
     
-    CGFloat collectionViewHeight = (_itemHeight + 5) * self.dataArray.count;
+    CGFloat collectionViewHeight = (_itemHeight + 5) * self.dataArray.count+kSafeAreaBottom;
     NSLog(@"collectionViewHeight:%f", collectionViewHeight);
     self.myCollectionView.sd_layout.heightIs(collectionViewHeight);
     

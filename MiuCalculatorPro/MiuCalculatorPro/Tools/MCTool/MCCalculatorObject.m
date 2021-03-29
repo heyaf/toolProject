@@ -143,17 +143,17 @@
             if(![result isEqualToString:@"Error"]) {
                 [stack push:result];
             } else {
-                return @"Error";
+                return @"输入错误";
             }
         } else {
-            return @"Error";
+            return @"输入错误";
         }
     }
     // 数组中的数据被遍历完；栈中仅有一个元素，这个元素就是运算结果；并且栈中的这个元素是数字
     if((stack.size == 1) && [self isNumber:stack.top]) {
         return stack.pop;
     }
-    return @"Error";
+    return @"输入错误";
 }
 
 
