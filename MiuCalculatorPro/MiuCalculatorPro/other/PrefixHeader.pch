@@ -8,6 +8,65 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import "MCAnimationManager.h"
 
 
+
+
+#define MC_HISTORY_DATA_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"MCCalculateHistoricalData.sqlite"]
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight  [UIScreen mainScreen].bounds.size.height
+//字符串拼接
+#define kStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
+
+//图片渲染加载
+#define kSDWebImage(view,str,defaultImg) [view sd_setImageWithURL:[NSURL URLWithString:str] placeholderImage:defaultImg]
+#define kSDWebImg(view,str) [view sd_setImageWithURL:[NSURL URLWithString:str]]
+
+
+// View 圆角和加边框
+#define kViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+// View 圆角
+#define kViewRadius(View, Radius)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+
+
+//状态栏高度
+#define kStatusBarHeight (kISiPhoneXX?44:20)
+//tabbar栏高度
+#define kTabBarHeight (kStatusBarHeight > 20 ? 83 : 49)
+//导航栏高度
+#define kNavBarHeight (kStatusBarHeight + 44)
+//安全区高度
+#define kSafeAreaBottom (kISiPhoneXX ? 34 : 0)
+
+
+//RGB格式
+#define kRGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+//RGBA格式
+#define kRGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+//随机颜色
+#define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+#pragma mark -基础颜色
+/*白色*/
+#define kWhiteColor [UIColor whiteColor]
+/*蓝色*/
+#define kBlueColor [UIColor blueColor]
+/*黑色*/
+#define kBlackColor [UIColor blackColor]
+/*红色*/
+#define kRedColor [UIColor redColor]
+/*绿色*/
+#define kGreenColor [UIColor greenColor]
+#define kGrayColor [UIColor grayColor]
+#define kGray2Color [UIColor lightGrayColor]
+#define kClearColor [UIColor clearColor]
 #endif /* PrefixHeader_pch */

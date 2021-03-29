@@ -1,31 +1,27 @@
 //
-//  DJCalculDataManager.m
-//  Calculator
+//  MCCalculatorManager.m
+//  MiuCalculatorPro
 //
-//  Created by 程青松 on 2019/11/21.
-//  Copyright © 2019 limingbo. All rights reserved.
+//  Created by iOS on 2021/3/29.
 //
 
-#import "DJCalculDataManager.h"
-#import <FMDB/FMDB.h>//"
-#import "NSDate+DJDate.h"
+#import "MCCalculatorManager.h"
+#import <FMDB/FMDB.h>
+#import "NSDate+MCdate.h"
 
+static MCCalculatorManager *_manager = nil;
 
-static DJCalculDataManager *_manager = nil;
-
-@interface DJCalculDataManager ()
+@interface MCCalculatorManager ()
 {
     FMDatabase *_db;
 }
 @end
-
-@implementation DJCalculDataManager
-
+@implementation MCCalculatorManager
 +(instancetype)sharedManager{
     if (_manager == nil) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
-            _manager = [[DJCalculDataManager alloc] init];
+            _manager = [[MCCalculatorManager alloc] init];
             [_manager initDataBase];
         });
     }
@@ -35,7 +31,7 @@ static DJCalculDataManager *_manager = nil;
 -(void)initDataBase{
     
     // 实例化FMDataBase对象
-    _db = [FMDatabase databaseWithPath:HISTORY_DATA_PATH];
+    _db = [FMDatabase databaseWithPath:MC_HISTORY_DATA_PATH];
     
     [_db open];
     
