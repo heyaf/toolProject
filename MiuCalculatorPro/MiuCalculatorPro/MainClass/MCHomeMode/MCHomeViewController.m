@@ -57,6 +57,11 @@
     }else{
         [MCAnimationManager.shardManager.animationWithSnow removeFromSuperlayer];
     }
+    
+    NSString *strName = kGetUserDefaults(KHomeSelBGImage);
+    if (strName.length>0) {
+        _bgImgView.image = [UIImage imageNamed:strName];
+    }
 }
 
 - (void)dealloc {
@@ -68,7 +73,7 @@
     
     UIView *leftView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 60)];
    UIButton *leftbtn =[UIButton buttonWithType:UIButtonTypeCustom];
-   leftbtn.frame = CGRectMake(-10, -5, 36, 36);
+   leftbtn.frame = CGRectMake(-10, 0, 36, 36);
    [leftbtn setImage:[UIImage imageNamed:@"history"] forState:UIControlStateNormal];
    [leftbtn addTarget:self action:@selector(showHSView) forControlEvents:UIControlEventTouchUpInside];
    [leftView addSubview:leftbtn];
@@ -78,7 +83,7 @@
     
     UIView *rightView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 60)];
    UIButton *rightbtn =[UIButton buttonWithType:UIButtonTypeCustom];
-    rightbtn.frame = CGRectMake(25, -5, 36, 36);
+    rightbtn.frame = CGRectMake(25, 0, 36, 36);
    [rightbtn setImage:[UIImage imageNamed:@"more_icon"] forState:UIControlStateNormal];
    [rightbtn addTarget:self action:@selector(settingView) forControlEvents:UIControlEventTouchUpInside];
    [rightView addSubview:rightbtn];
@@ -118,11 +123,17 @@
     if (!_bgImgView) {
         _bgImgView = [[UIImageView alloc] init];
         _bgImgView.contentMode = UIViewContentModeScaleAspectFill;
-        NSFileManager *manager = NSFileManager.defaultManager;
-        if ([manager fileExistsAtPath:BG_IMG_PATH]) {
-            UIImage *img = [UIImage imageWithContentsOfFile:BG_IMG_PATH];
-            _bgImgView.image = img;
-        } else {
+//        NSFileManager *manager = NSFileManager.defaultManager;
+//        if ([manager fileExistsAtPath:BG_IMG_PATH]) {
+//            UIImage *img = [UIImage imageWithContentsOfFile:BG_IMG_PATH];
+//            _bgImgView.image = img;
+//        } else {
+//            _bgImgView.image = [UIImage imageNamed:@"03_bg"];
+//        }
+        NSString *strName = kGetUserDefaults(KHomeSelBGImage);
+        if (strName.length>0) {
+            _bgImgView.image = [UIImage imageNamed:strName];
+        }else{
             _bgImgView.image = [UIImage imageNamed:@"03_bg"];
         }
         [self.view addSubview:self.bgImgView];

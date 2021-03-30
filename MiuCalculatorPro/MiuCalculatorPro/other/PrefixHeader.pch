@@ -26,6 +26,8 @@
 //动画的开关
 #define KHomeAnimaOpen @"KHOMEANIMATIONOPEN"
 
+//选择的背景图
+#define KHomeSelBGImage @"KHOMESELBGIMAGE"
 //宏定义
 #define MC_HISTORY_DATA_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"MCCalculateHistoricalData.sqlite"]
 #define BG_IMG_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"bgimg.jpg"]

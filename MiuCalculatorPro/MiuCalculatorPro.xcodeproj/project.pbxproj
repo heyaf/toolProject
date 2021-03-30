@@ -43,6 +43,7 @@
 		ABA741AD2612F36000F823D5 /* MCSelectColorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA741AB2612F36000F823D5 /* MCSelectColorTableViewCell.m */; };
 		ABA741AE2612F36000F823D5 /* MCSelectColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA741AC2612F36000F823D5 /* MCSelectColorTableViewCell.xib */; };
 		ABA741B42612FC6E00F823D5 /* UIColor+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA741B32612FC6E00F823D5 /* UIColor+Method.m */; };
+		ABA741C726131B2200F823D5 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA741C526131B2200F823D5 /* iCarousel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,8 @@
 		ABA741AC2612F36000F823D5 /* MCSelectColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCSelectColorTableViewCell.xib; sourceTree = "<group>"; };
 		ABA741B22612FC6E00F823D5 /* UIColor+Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Method.h"; sourceTree = "<group>"; };
 		ABA741B32612FC6E00F823D5 /* UIColor+Method.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Method.m"; sourceTree = "<group>"; };
+		ABA741C526131B2200F823D5 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		ABA741C626131B2200F823D5 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		C09A28EDDBABB42294EFAB75 /* Pods-MiuCalculatorProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiuCalculatorProTests.debug.xcconfig"; path = "Target Support Files/Pods-MiuCalculatorProTests/Pods-MiuCalculatorProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2EEF1266801CC842EDB4C26 /* Pods_MiuCalculatorProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiuCalculatorProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -258,6 +261,7 @@
 		AB86CD9026116909009D46B6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				ABA741BD26131A1000F823D5 /* JTSlideShadowAnimation */,
 				AB86CDB026116D27009D46B6 /* animation */,
 				AB86CDAF26116D27009D46B6 /* MCCategory */,
 				AB86CDB126116D27009D46B6 /* MCTool */,
@@ -413,6 +417,23 @@
 				ABA741AC2612F36000F823D5 /* MCSelectColorTableViewCell.xib */,
 			);
 			path = MCindividuation;
+			sourceTree = "<group>";
+		};
+		ABA741BD26131A1000F823D5 /* JTSlideShadowAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				ABA741C426131B2200F823D5 /* iCarousel */,
+			);
+			path = JTSlideShadowAnimation;
+			sourceTree = "<group>";
+		};
+		ABA741C426131B2200F823D5 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				ABA741C526131B2200F823D5 /* iCarousel.m */,
+				ABA741C626131B2200F823D5 /* iCarousel.h */,
+			);
+			path = iCarousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -659,6 +680,7 @@
 				AB86CE0326117F47009D46B6 /* UIImage+MCColorImage.m in Sources */,
 				AB86CE0F261180A5009D46B6 /* MCSettingViewController.m in Sources */,
 				AB86CE402611DE45009D46B6 /* MCsetDetailViewController.m in Sources */,
+				ABA741C726131B2200F823D5 /* iCarousel.m in Sources */,
 				AB86CD9C26116909009D46B6 /* AppDelegate.m in Sources */,
 				AB86CD9A26116909009D46B6 /* ViewController.m in Sources */,
 				AB86CE2D2611DAAA009D46B6 /* LZHHeaderView.m in Sources */,

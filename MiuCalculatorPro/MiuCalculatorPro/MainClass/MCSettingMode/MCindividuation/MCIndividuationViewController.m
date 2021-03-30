@@ -76,7 +76,7 @@
     [self.view addSubview:swithcView1];
     
     UILabel *switchLabel1 = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 100, 24)];
-    switchLabel1.text = @"背景颜色";
+    switchLabel1.text = @"主题颜色";
     switchLabel1.font = [UIFont systemFontOfSize:15];
     [swithcView1 addSubview:switchLabel1];
     

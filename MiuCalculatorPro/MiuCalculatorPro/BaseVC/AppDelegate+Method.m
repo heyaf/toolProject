@@ -17,7 +17,7 @@
     if (str.length<1) {
         kSetUserDefaults(@"YES",KHomeAnimaOpen);
     }
-    if (kGetUserDefaults(KSelColor)) {
+    if (!kGetUserDefaults(KSelColor)) {
         kSetUserDefaults(@"#00a6ac",KSelColor);
     }
 
