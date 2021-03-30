@@ -41,9 +41,7 @@
     [self.view sendSubviewToBack:self.bgImgView];
     
     
-    if (![NSUserDefaults.standardUserDefaults boolForKey:@"bgAnimation"]) {
-        [self.view.layer addSublayer:MCAnimationManager.shardManager.animationWithSnow];
-    }
+
     [self setNavButton];
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -51,6 +49,14 @@
     self.navigationController.navigationBar.translucent = YES;
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:kClearColor] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage imageWithColor:kClearColor]];
+    
+    [self.myCollectionView reloadData];
+    NSString *str =kGetUserDefaults(KHomeAnimaOpen);
+    if (str.length>2) {
+        [self.view.layer addSublayer:MCAnimationManager.shardManager.animationWithSnow];
+    }else{
+        [MCAnimationManager.shardManager.animationWithSnow removeFromSuperlayer];
+    }
 }
 
 - (void)dealloc {
@@ -199,8 +205,11 @@
     MCHomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MCHomeCollectionViewCell" forIndexPath:indexPath];
     cell.itemHeight = _itemHeight;
     cell.title = self.dataArray[indexPath.section][indexPath.row];
-    if (indexPath.section==4&&indexPath.row==4) {
-        cell.backgroundColor = kRGB(0, 255, 255);
+    NSString *colorStr = kGetUserDefaults(KSelColor);
+    if (indexPath.row==4) {
+        cell.backgroundColor = [UIColor colorWithHexString:colorStr alpha:1];
+    }else{
+        cell.backgroundColor = kClearColor;
     }
     return cell;
 }

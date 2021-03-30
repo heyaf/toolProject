@@ -40,6 +40,9 @@
 		ABA741912612CCFB00F823D5 /* MCIndividuationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA741902612CCFB00F823D5 /* MCIndividuationViewController.m */; };
 		ABA741972612D3F000F823D5 /* MCBackImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA741962612D3F000F823D5 /* MCBackImageViewViewController.m */; };
 		ABA7419D2612DB0D00F823D5 /* MCSelectColorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7419C2612DB0D00F823D5 /* MCSelectColorVC.m */; };
+		ABA741AD2612F36000F823D5 /* MCSelectColorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA741AB2612F36000F823D5 /* MCSelectColorTableViewCell.m */; };
+		ABA741AE2612F36000F823D5 /* MCSelectColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA741AC2612F36000F823D5 /* MCSelectColorTableViewCell.xib */; };
+		ABA741B42612FC6E00F823D5 /* UIColor+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA741B32612FC6E00F823D5 /* UIColor+Method.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +130,11 @@
 		ABA741962612D3F000F823D5 /* MCBackImageViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCBackImageViewViewController.m; sourceTree = "<group>"; };
 		ABA7419B2612DB0D00F823D5 /* MCSelectColorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCSelectColorVC.h; sourceTree = "<group>"; };
 		ABA7419C2612DB0D00F823D5 /* MCSelectColorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSelectColorVC.m; sourceTree = "<group>"; };
+		ABA741AA2612F36000F823D5 /* MCSelectColorTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCSelectColorTableViewCell.h; sourceTree = "<group>"; };
+		ABA741AB2612F36000F823D5 /* MCSelectColorTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSelectColorTableViewCell.m; sourceTree = "<group>"; };
+		ABA741AC2612F36000F823D5 /* MCSelectColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCSelectColorTableViewCell.xib; sourceTree = "<group>"; };
+		ABA741B22612FC6E00F823D5 /* UIColor+Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Method.h"; sourceTree = "<group>"; };
+		ABA741B32612FC6E00F823D5 /* UIColor+Method.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Method.m"; sourceTree = "<group>"; };
 		C09A28EDDBABB42294EFAB75 /* Pods-MiuCalculatorProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiuCalculatorProTests.debug.xcconfig"; path = "Target Support Files/Pods-MiuCalculatorProTests/Pods-MiuCalculatorProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2EEF1266801CC842EDB4C26 /* Pods_MiuCalculatorProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiuCalculatorProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -255,6 +263,8 @@
 				AB86CDB126116D27009D46B6 /* MCTool */,
 				AB86CE0126117F47009D46B6 /* UIImage+MCColorImage.h */,
 				AB86CE0226117F47009D46B6 /* UIImage+MCColorImage.m */,
+				ABA741B22612FC6E00F823D5 /* UIColor+Method.h */,
+				ABA741B32612FC6E00F823D5 /* UIColor+Method.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -398,6 +408,9 @@
 				ABA741902612CCFB00F823D5 /* MCIndividuationViewController.m */,
 				ABA7419B2612DB0D00F823D5 /* MCSelectColorVC.h */,
 				ABA7419C2612DB0D00F823D5 /* MCSelectColorVC.m */,
+				ABA741AA2612F36000F823D5 /* MCSelectColorTableViewCell.h */,
+				ABA741AB2612F36000F823D5 /* MCSelectColorTableViewCell.m */,
+				ABA741AC2612F36000F823D5 /* MCSelectColorTableViewCell.xib */,
 			);
 			path = MCindividuation;
 			sourceTree = "<group>";
@@ -513,6 +526,7 @@
 				AB86CD5F260EE0B8009D46B6 /* LaunchScreen.storyboard in Resources */,
 				AB86CD5C260EE0B8009D46B6 /* Assets.xcassets in Resources */,
 				AB86CD5A260EE0B6009D46B6 /* Main.storyboard in Resources */,
+				ABA741AE2612F36000F823D5 /* MCSelectColorTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,9 +662,11 @@
 				AB86CD9C26116909009D46B6 /* AppDelegate.m in Sources */,
 				AB86CD9A26116909009D46B6 /* ViewController.m in Sources */,
 				AB86CE2D2611DAAA009D46B6 /* LZHHeaderView.m in Sources */,
+				ABA741AD2612F36000F823D5 /* MCSelectColorTableViewCell.m in Sources */,
 				AB86CE2E2611DAAA009D46B6 /* LZHPersonalCenterCell.m in Sources */,
 				AB86CDD226117A9B009D46B6 /* MCStack.m in Sources */,
 				AB86CDC9261179CC009D46B6 /* NSDate+MCdate.m in Sources */,
+				ABA741B42612FC6E00F823D5 /* UIColor+Method.m in Sources */,
 				AB86CDB426116D8C009D46B6 /* MCAnimationManager.m in Sources */,
 				ABA7419D2612DB0D00F823D5 /* MCSelectColorVC.m in Sources */,
 				AB86CDFA26117D84009D46B6 /* MCHomeViewController.m in Sources */,

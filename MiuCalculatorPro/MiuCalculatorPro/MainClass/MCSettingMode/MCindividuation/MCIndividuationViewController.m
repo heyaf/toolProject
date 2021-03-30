@@ -25,6 +25,11 @@
     [self creatUI];
     [self setNavButton];
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSString *colorStr = kGetUserDefaults(KSelColor);
+    self.colorView.backgroundColor = [UIColor colorWithHexString:colorStr alpha:1];
+}
 -(void)setNavButton{
 
     
@@ -59,7 +64,12 @@
     self.pushSwitch.centerY = swithcView.height/2;
    //设置开关切换事件
    [self.pushSwitch addTarget:self action:@selector(switchChange:) forControlEvents:UIControlEventValueChanged];
-    
+    NSString *str = kGetUserDefaults(KHomeAnimaOpen);
+    if (str.length>2) {
+        self.pushSwitch.on = YES;
+    }else{
+        self.pushSwitch.on = NO;
+    }
     
     UIView *swithcView1 = [[UIView alloc] initWithFrame:CGRectMake(0, kNavBarHeight+68, kScreenWidth, 48)];
     swithcView1.backgroundColor = kWhiteColor;
@@ -75,9 +85,11 @@
     [swithcView1 addSubview:rightArrow];
     
     UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(kScreenWidth-30-10-30, 9, 30, 30)];
-    colorView.backgroundColor = kRedColor;
+    NSString *colorStr = kGetUserDefaults(KSelColor);
+    
+    colorView.backgroundColor = [UIColor colorWithHexString:colorStr alpha:1];
     [swithcView1 addSubview:colorView];
-    [self.colorView addSubview:colorView];
+    self.colorView = colorView;
     
     
     UIButton *selectBtn = [UIButton buttonWithType:0];
@@ -100,9 +112,11 @@
     }
     return _pushSwitch;
 }
-- (void) switchChange:(UISwitch*)sw {
+- (void)switchChange:(UISwitch*)sw {
     if(sw.on == YES) {
+        kSetUserDefaults(@"YES",KHomeAnimaOpen);
     } else if(sw.on == NO) {
+        kSetUserDefaults(@"Y",KHomeAnimaOpen);
     }
 }
 -(void)selectColor{

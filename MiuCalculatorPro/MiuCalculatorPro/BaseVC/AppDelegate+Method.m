@@ -13,6 +13,13 @@
 }
 -(void)baseSet{
     [SVProgressHUD setMaximumDismissTimeInterval:1.0];
+    NSString *str = kGetUserDefaults(KHomeAnimaOpen);
+    if (str.length<1) {
+        kSetUserDefaults(@"YES",KHomeAnimaOpen);
+    }
+    if (kGetUserDefaults(KSelColor)) {
+        kSetUserDefaults(@"#00a6ac",KSelColor);
+    }
 
 }
 -(UIViewController *)getCurrentVC{
