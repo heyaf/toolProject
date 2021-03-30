@@ -37,6 +37,9 @@
 		AB86CE2F2611DAAA009D46B6 /* LZHHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB86CE282611DAAA009D46B6 /* LZHHeaderView.xib */; };
 		AB86CE302611DAAA009D46B6 /* LZHPersonalCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CE292611DAAA009D46B6 /* LZHPersonalCenterView.m */; };
 		AB86CE402611DE45009D46B6 /* MCsetDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CE3F2611DE45009D46B6 /* MCsetDetailViewController.m */; };
+		ABA741912612CCFB00F823D5 /* MCIndividuationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA741902612CCFB00F823D5 /* MCIndividuationViewController.m */; };
+		ABA741972612D3F000F823D5 /* MCBackImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA741962612D3F000F823D5 /* MCBackImageViewViewController.m */; };
+		ABA7419D2612DB0D00F823D5 /* MCSelectColorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7419C2612DB0D00F823D5 /* MCSelectColorVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,12 @@
 		AB86CE2C2611DAAA009D46B6 /* LZHPersonalCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHPersonalCenterView.h; sourceTree = "<group>"; };
 		AB86CE3E2611DE45009D46B6 /* MCsetDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCsetDetailViewController.h; sourceTree = "<group>"; };
 		AB86CE3F2611DE45009D46B6 /* MCsetDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCsetDetailViewController.m; sourceTree = "<group>"; };
+		ABA7418F2612CCFB00F823D5 /* MCIndividuationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCIndividuationViewController.h; sourceTree = "<group>"; };
+		ABA741902612CCFB00F823D5 /* MCIndividuationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCIndividuationViewController.m; sourceTree = "<group>"; };
+		ABA741952612D3F000F823D5 /* MCBackImageViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCBackImageViewViewController.h; sourceTree = "<group>"; };
+		ABA741962612D3F000F823D5 /* MCBackImageViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCBackImageViewViewController.m; sourceTree = "<group>"; };
+		ABA7419B2612DB0D00F823D5 /* MCSelectColorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCSelectColorVC.h; sourceTree = "<group>"; };
+		ABA7419C2612DB0D00F823D5 /* MCSelectColorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSelectColorVC.m; sourceTree = "<group>"; };
 		C09A28EDDBABB42294EFAB75 /* Pods-MiuCalculatorProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiuCalculatorProTests.debug.xcconfig"; path = "Target Support Files/Pods-MiuCalculatorProTests/Pods-MiuCalculatorProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2EEF1266801CC842EDB4C26 /* Pods_MiuCalculatorProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiuCalculatorProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -321,6 +330,8 @@
 				AB86CE0E261180A5009D46B6 /* MCSettingViewController.m */,
 				AB86CE3E2611DE45009D46B6 /* MCsetDetailViewController.h */,
 				AB86CE3F2611DE45009D46B6 /* MCsetDetailViewController.m */,
+				ABA7418D2612CCA100F823D5 /* MCbackImage */,
+				ABA7418E2612CCA100F823D5 /* MCindividuation */,
 				AB86CE252611DAAA009D46B6 /* LZHPersonalCenterView */,
 			);
 			path = MCSettingMode;
@@ -369,6 +380,26 @@
 				AB86CE2C2611DAAA009D46B6 /* LZHPersonalCenterView.h */,
 			);
 			path = LZHPersonalCenterView;
+			sourceTree = "<group>";
+		};
+		ABA7418D2612CCA100F823D5 /* MCbackImage */ = {
+			isa = PBXGroup;
+			children = (
+				ABA741952612D3F000F823D5 /* MCBackImageViewViewController.h */,
+				ABA741962612D3F000F823D5 /* MCBackImageViewViewController.m */,
+			);
+			path = MCbackImage;
+			sourceTree = "<group>";
+		};
+		ABA7418E2612CCA100F823D5 /* MCindividuation */ = {
+			isa = PBXGroup;
+			children = (
+				ABA7418F2612CCFB00F823D5 /* MCIndividuationViewController.h */,
+				ABA741902612CCFB00F823D5 /* MCIndividuationViewController.m */,
+				ABA7419B2612DB0D00F823D5 /* MCSelectColorVC.h */,
+				ABA7419C2612DB0D00F823D5 /* MCSelectColorVC.m */,
+			);
+			path = MCindividuation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -609,6 +640,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA741972612D3F000F823D5 /* MCBackImageViewViewController.m in Sources */,
 				AB86CE302611DAAA009D46B6 /* LZHPersonalCenterView.m in Sources */,
 				AB86CE0326117F47009D46B6 /* UIImage+MCColorImage.m in Sources */,
 				AB86CE0F261180A5009D46B6 /* MCSettingViewController.m in Sources */,
@@ -620,9 +652,11 @@
 				AB86CDD226117A9B009D46B6 /* MCStack.m in Sources */,
 				AB86CDC9261179CC009D46B6 /* NSDate+MCdate.m in Sources */,
 				AB86CDB426116D8C009D46B6 /* MCAnimationManager.m in Sources */,
+				ABA7419D2612DB0D00F823D5 /* MCSelectColorVC.m in Sources */,
 				AB86CDFA26117D84009D46B6 /* MCHomeViewController.m in Sources */,
 				AB86CE0926117FEB009D46B6 /* MCHomeCollectionViewCell.m in Sources */,
 				AB86CDEE26117D4E009D46B6 /* MCBaseViewController.m in Sources */,
+				ABA741912612CCFB00F823D5 /* MCIndividuationViewController.m in Sources */,
 				AB86CD9B26116909009D46B6 /* SceneDelegate.m in Sources */,
 				AB86CE15261180C1009D46B6 /* MCHSView.m in Sources */,
 				AB86CD62260EE0B8009D46B6 /* main.m in Sources */,

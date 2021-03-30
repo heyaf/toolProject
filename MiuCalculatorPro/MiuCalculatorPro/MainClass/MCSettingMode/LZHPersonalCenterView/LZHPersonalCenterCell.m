@@ -38,7 +38,7 @@
         self.bottomLinkView.frame = CGRectMake(15, self.frame.size.height-1, self.frame.size.width-15, 1) ;
     }
 
-    self.leftImg.frame = CGRectMake(15, (self.frame.size.height-32)/2, 32, 32) ;
+    self.leftImg.frame = CGRectMake(15, (self.frame.size.height-26)/2, 26, 26) ;
     self.titleLabel.frame = CGRectMake(55, 0, 100, self.frame.size.height) ;
     self.rightImg.frame = CGRectMake(self.frame.size.width-26, (self.frame.size.height-16)/2, 16, 16) ;
     self.rightExtendLabel.frame = CGRectMake(160, 0, self.frame.size.width-190, self.frame.size.height) ;

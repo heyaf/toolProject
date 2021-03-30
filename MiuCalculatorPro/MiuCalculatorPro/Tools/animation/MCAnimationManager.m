@@ -49,7 +49,7 @@ static MCAnimationManager *_manager;
     snowflake.yAcceleration = 30;
     snowflake.emissionRange = M_PI_2;
     snowflake.spinRange = M_PI_4;
-    snowflake.contents  = (id)[[UIImage imageNamed:@"snow"] CGImage];
+    snowflake.contents  = (id)[[UIImage imageNamed:@"MCsnow"] CGImage];
     snowflake.scaleRange = 0.6f;
     snowflake.scale = 0.7f;
     

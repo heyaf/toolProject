@@ -10,6 +10,9 @@
 #import <SXAlertView.h>
 #import <SVProgressHUD.h>
 #import "MCsetDetailViewController.h"
+#import "MCIndividuationViewController.h"
+#import "MCBackImageViewViewController.h"
+
 @interface MCSettingViewController ()<LZHPersonalCenterViewDelegate>
 
 @end
@@ -22,11 +25,11 @@
     self.view.backgroundColor = kWhiteColor;
     self.navigationItem.title = @"设置";
     
-    NSArray * centerArr = @[@[@"主题色",@"背景图片"],@[@"使用说明",@"清除缓存"],@[@"隐私条款"],@[@"反馈"]] ;
+    NSArray * centerArr = @[@[@"个性化",@"背景图片"],@[@"隐私条款",@"清除缓存"],@[@"反馈"]] ;
     LZHPersonalCenterView * pcv = [[LZHPersonalCenterView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) CenterArr:centerArr isShowHeader:YES];
     pcv.delegate = self ;
     //按需求定是否需要
-    pcv.extendCenterRightArr = @[@[@"",@""],@[@"",@""],@[@""],@[@""]] ;
+    pcv.extendCenterRightArr = @[@[@"",@""],@[@"",@""],@[@""]] ;
     [self.view addSubview:pcv];
     
     [self setNavButton];
@@ -74,6 +77,14 @@
         detailVC.hasKefu = @"YES";
         detailVC.message = @"用着不爽？想吐槽我们？或者有好的建议与意见，欢迎联系我们的客服小姐姐\n我们会尽力解决的哦。\n\n客服微信:ccc666888ooo (ps:请备注好App名称)";
         [self.navigationController pushViewController:detailVC animated:YES];
+       
+    }if ([title isEqualToString:@"个性化"]){
+        MCIndividuationViewController *newViewController = [[MCIndividuationViewController alloc] init];
+        [self.navigationController pushViewController:newViewController animated:YES];
+       
+    }if ([title isEqualToString:@"背景图片"]){
+        MCBackImageViewViewController *newViewController = [[MCBackImageViewViewController alloc] init];
+        [self.navigationController pushViewController:newViewController animated:YES];
        
     }
 }
