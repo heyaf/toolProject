@@ -75,7 +75,7 @@
     }else if ([title isEqualToString:@"反馈"]){
         detailVC.Title = @"联系客服";
         detailVC.hasKefu = @"YES";
-        detailVC.message = @"用着不爽？想吐槽我们？或者有好的建议与意见，欢迎联系我们的客服小姐姐\n我们会尽力解决的哦。\n\n客服微信:ccc666888ooo (ps:请备注好App名称)";
+        detailVC.message = @"用着不爽？想吐槽我们？或者有好的建议与意见，欢迎联系我们的客服小姐姐\n我们会尽力解决的哦。\n\n客服微信:ccc666888ooo";
         [self.navigationController pushViewController:detailVC animated:YES];
        
     }if ([title isEqualToString:@"个性化"]){

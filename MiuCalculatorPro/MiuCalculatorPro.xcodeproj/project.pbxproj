@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		11E86C93AAE3BEE62496F504 /* Pods_MiuCalculatorProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EEF1266801CC842EDB4C26 /* Pods_MiuCalculatorProTests.framework */; };
-		7905074BEAB2E3DCDCFB5428 /* Pods_MiuCalculatorPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBEF0B21AEB91AB07510653 /* Pods_MiuCalculatorPro.framework */; };
 		9B34341ABD84EC5C95FC0682 /* Pods_MiuCalculatorPro_MiuCalculatorProUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369C61B9FF2DE3D6C321523C /* Pods_MiuCalculatorPro_MiuCalculatorProUITests.framework */; };
 		AB86CD5A260EE0B6009D46B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB86CD58260EE0B6009D46B6 /* Main.storyboard */; };
 		AB86CD5C260EE0B8009D46B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB86CD5B260EE0B8009D46B6 /* Assets.xcassets */; };
@@ -147,7 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7905074BEAB2E3DCDCFB5428 /* Pods_MiuCalculatorPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,15 +873,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J69V6VXM9A;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = RB7GBVJD8Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MiuCalculatorPro/other/PrefixHeader.pch";
 				INFOPLIST_FILE = MiuCalculatorPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ASKeepBookflu.www.MiuCalculatorPro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MiuCalculatorPro.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -896,15 +896,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J69V6VXM9A;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = RB7GBVJD8Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MiuCalculatorPro/other/PrefixHeader.pch";
 				INFOPLIST_FILE = MiuCalculatorPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ASKeepBookflu.www.MiuCalculatorPro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MiuCalculatorPro.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

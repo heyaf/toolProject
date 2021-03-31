@@ -20,12 +20,14 @@
 {
     
     self.items = [NSMutableArray array];
-    
-    for (int i = 1; i < 10; i++)
+    NSMutableArray *mutArr = [NSMutableArray array];
+    for (int i = 1; i < 6; i++)
     {
         
-        [self.items addObject:[UIImage imageNamed:[NSString stringWithFormat:@"bgimage0%d.jpg",i]]];
+        [self.items addObject:[UIImage imageNamed:[NSString stringWithFormat:@"bgimage0%d",i]]];
+        [mutArr addObject:[NSString stringWithFormat:@"bgimage0%d",i]];
     }
+    NSLog(@"---%@",mutArr);
 
 }
 - (void)viewDidLoad {
@@ -61,6 +63,8 @@
     UIImageView *imageView = nil;
     
 
+    NSLog(@"1-----%li",(long)index);
+
     if (view == nil)
     {
         /** 创建视图,然后放上图片展示*/
@@ -70,6 +74,7 @@
         
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:view.bounds];
         imageView.image = self.items[index];
+        NSLog(@"-----%li",(long)index);
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         imageView.clipsToBounds = YES;
         imageView.backgroundColor = [UIColor clearColor];
@@ -159,7 +164,7 @@
     
     UIView *leftView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 60)];
    UIButton *leftbtn =[UIButton buttonWithType:UIButtonTypeCustom];
-   leftbtn.frame = CGRectMake(-10, 0, 36, 36);
+   leftbtn.frame = CGRectMake(-10, 0, 26, 26);
    [leftbtn setImage:[UIImage imageNamed:@"backicon"] forState:UIControlStateNormal];
    [leftbtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
    [leftView addSubview:leftbtn];
@@ -168,7 +173,7 @@
     
     UIView *rightView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 60)];
    UIButton *rightbtn =[UIButton buttonWithType:UIButtonTypeCustom];
-    rightbtn.frame = CGRectMake(25, 0, 36, 36);
+    rightbtn.frame = CGRectMake(30, 0, 26, 26);
    [rightbtn setImage:[UIImage imageNamed:@"photos"] forState:UIControlStateNormal];
    [rightbtn addTarget:self action:@selector(getPhotos) forControlEvents:UIControlEventTouchUpInside];
    [rightView addSubview:rightbtn];

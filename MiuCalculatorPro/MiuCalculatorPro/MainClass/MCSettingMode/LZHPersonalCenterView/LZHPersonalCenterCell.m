@@ -58,7 +58,6 @@
 
 -(void)setExtendCenterRightNS:(NSString *)extendCenterRightNS{
     _extendCenterRightNS = extendCenterRightNS ;
-    NSLog(@"扩展内容：%@",extendCenterRightNS) ;
     self.rightExtendLabel.text = extendCenterRightNS ;
 }
 
