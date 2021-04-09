@@ -104,7 +104,6 @@
         for (int j=i+1; j<mutSortArr.count; j++) {
             NSInteger id1 =[mutSortArr[i][@"id"] integerValue];
             NSInteger id2 =[mutSortArr[j][@"id"] integerValue];
-
             if (id1<id2) {
                 NSDictionary *dic = mutSortArr[i];
                 mutSortArr[i] = mutSortArr[j];
