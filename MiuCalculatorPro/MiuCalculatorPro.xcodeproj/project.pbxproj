@@ -16,7 +16,6 @@
 		AB86CD6C260EE0B9009D46B6 /* MiuCalculatorProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD6B260EE0B9009D46B6 /* MiuCalculatorProTests.m */; };
 		AB86CD77260EE0B9009D46B6 /* MiuCalculatorProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD76260EE0B9009D46B6 /* MiuCalculatorProUITests.m */; };
 		AB86CD9A26116909009D46B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD9426116909009D46B6 /* ViewController.m */; };
-		AB86CD9B26116909009D46B6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD9526116909009D46B6 /* SceneDelegate.m */; };
 		AB86CD9C26116909009D46B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CD9626116909009D46B6 /* AppDelegate.m */; };
 		AB86CDB426116D8C009D46B6 /* MCAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CDB326116D8C009D46B6 /* MCAnimationManager.m */; };
 		AB86CDC3261178D0009D46B6 /* MCCalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86CDC2261178D0009D46B6 /* MCCalculatorManager.m */; };
@@ -84,10 +83,8 @@
 		AB86CD78260EE0B9009D46B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB86CD9326116909009D46B6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB86CD9426116909009D46B6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AB86CD9526116909009D46B6 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		AB86CD9626116909009D46B6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AB86CD9726116909009D46B6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AB86CD9826116909009D46B6 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		AB86CDAB261169D4009D46B6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		AB86CDB226116D8C009D46B6 /* MCAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAnimationManager.h; sourceTree = "<group>"; };
 		AB86CDB326116D8C009D46B6 /* MCAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAnimationManager.m; sourceTree = "<group>"; };
@@ -287,8 +284,6 @@
 				AB86CD9626116909009D46B6 /* AppDelegate.m */,
 				AB86CE1C2611BA65009D46B6 /* AppDelegate+Method.h */,
 				AB86CE1D2611BA65009D46B6 /* AppDelegate+Method.m */,
-				AB86CD9826116909009D46B6 /* SceneDelegate.h */,
-				AB86CD9526116909009D46B6 /* SceneDelegate.m */,
 				AB86CD9726116909009D46B6 /* ViewController.h */,
 				AB86CD9426116909009D46B6 /* ViewController.m */,
 				AB86CDDF26117D28009D46B6 /* BaseVC */,
@@ -693,7 +688,6 @@
 				AB86CE0926117FEB009D46B6 /* MCHomeCollectionViewCell.m in Sources */,
 				AB86CDEE26117D4E009D46B6 /* MCBaseViewController.m in Sources */,
 				ABA741912612CCFB00F823D5 /* MCIndividuationViewController.m in Sources */,
-				AB86CD9B26116909009D46B6 /* SceneDelegate.m in Sources */,
 				AB86CE15261180C1009D46B6 /* MCHSView.m in Sources */,
 				AB86CD62260EE0B8009D46B6 /* main.m in Sources */,
 				AB86CDD826117B3A009D46B6 /* MCCalculatorObject.m in Sources */,
@@ -873,17 +867,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = RB7GBVJD8Q;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = F3J9T73S9F;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MiuCalculatorPro/other/PrefixHeader.pch";
 				INFOPLIST_FILE = MiuCalculatorPro/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MiuCalculatorPro.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MiumiuCalculatorPro.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -896,17 +890,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = RB7GBVJD8Q;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = F3J9T73S9F;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MiuCalculatorPro/other/PrefixHeader.pch";
 				INFOPLIST_FILE = MiuCalculatorPro/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MiuCalculatorPro.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MiumiuCalculatorPro.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
