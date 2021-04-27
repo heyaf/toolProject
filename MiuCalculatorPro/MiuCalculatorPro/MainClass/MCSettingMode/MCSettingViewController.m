@@ -12,8 +12,11 @@
 #import "MCsetDetailViewController.h"
 #import "MCIndividuationViewController.h"
 #import "MCBackImageViewViewController.h"
-
-@interface MCSettingViewController ()<LZHPersonalCenterViewDelegate>
+#import <GDTNativeExpressProAdManager.h>
+#import <GDTNativeExpressProAdView.h>
+@interface MCSettingViewController ()<GDTNativeExpressProAdManagerDelegate, GDTNativeExpressProAdViewDelegate,LZHPersonalCenterViewDelegate>
+@property (nonatomic, strong) GDTNativeExpressProAdManager *adManager;
+@property (nonatomic, strong) NSMutableArray *expressAdViews;
 
 @end
 
@@ -33,6 +36,20 @@
     [self.view addSubview:pcv];
     
     [self setNavButton];
+    [self setGDST];
+}
+-(void)setGDST{
+    GDTAdParams *adParams = [[GDTAdParams alloc] init];
+    adParams.adSize = CGSizeMake(kScreenWidth, 100);
+    adParams.maxVideoDuration = 30;
+    adParams.minVideoDuration = 5;
+    adParams.detailPageVideoMuted = YES;
+    adParams.videoMuted = YES;
+    adParams.videoAutoPlayOnWWAN = YES;
+    self.adManager = [[GDTNativeExpressProAdManager alloc] initWithPlacementId:kplacementId
+                                                                           adPrams:adParams];
+    self.adManager.delegate = self;
+    [self.adManager loadAd:1];
 }
 -(void)setNavButton{
 
@@ -147,6 +164,91 @@
 
 -(void)backAction{
     [self.navigationController popViewControllerAnimated:YES];
+}
+#pragma mark - GDTNativeExpressProAdManagerDelegete
+/**
+ * 拉取广告成功的回调
+ */
+- (void)gdt_nativeExpressProAdSuccessToLoad:(GDTNativeExpressProAdManager *)adManager views:(NSArray<__kindof GDTNativeExpressProAdView *> *)views
+{
+    NSLog(@"成功%s",__FUNCTION__);
+    self.expressAdViews = [NSMutableArray arrayWithArray:views];
+    if (self.expressAdViews.count) {
+        [self.expressAdViews enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            GDTNativeExpressProAdView *adView = (GDTNativeExpressProAdView *)obj;
+            adView.controller = self;
+            adView.delegate = self;
+            [adView render];
+            NSLog(@"eCPM:%ld eCPMLevel:%@", [adView eCPM], [adView eCPMLevel]);
+        }];
+    }
+    UIView *view = [self.expressAdViews objectAtIndex:0];
+    UIView *adbgView = [[UIView alloc] initWithFrame:CGRectMake(0, kScreenHeight-20-300, kScreenWidth, 300)];
+    [adbgView addSubview:view];
+    [self.view addSubview:adbgView];
+}
+
+/**
+ * 拉取广告失败的回调
+ */
+- (void)gdt_nativeExpressProAdFailToLoad:(GDTNativeExpressProAdManager *)adManager error:(NSError *)error
+{
+    NSLog(@"%s",__FUNCTION__);
+    NSLog(@"Express Ad Load Fail : %@",error);
+}
+
+
+#pragma mark - GDTNativeExpressProAdViewDelegate;
+- (void)gdt_NativeExpressProAdViewRenderSuccess:(GDTNativeExpressProAdView *)nativeExpressAdView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)gdt_NativeExpressProAdViewRenderFail:(GDTNativeExpressProAdView *)nativeExpressProAdView
+{
+    
+}
+
+- (void)gdt_NativeExpressProAdViewClicked:(GDTNativeExpressProAdView *)nativeExpressAdView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)gdt_NativeExpressProAdViewClosed:(GDTNativeExpressProAdView *)nativeExpressAdView
+{
+    NSLog(@"%s",__FUNCTION__);
+    [nativeExpressAdView removeFromSuperview];
+    
+}
+
+- (void)gdt_NativeExpressProAdViewExposure:(GDTNativeExpressProAdView *)nativeExpressAdView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)gdt_NativeExpressProAdViewWillPresentScreen:(GDTNativeExpressProAdView *)nativeExpressAdView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)gdt_NativeExpressProAdViewDidPresentScreen:(GDTNativeExpressProAdView *)nativeExpressAdView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)gdt_NativeExpressProAdViewWillDissmissScreen:(GDTNativeExpressProAdView *)nativeExpressAdView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)gdt_NativeExpressProAdViewDidDissmissScreen:(GDTNativeExpressProAdView *)nativeExpressAdView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)gdt_NativeExpressProAdView:(GDTNativeExpressProAdView *)nativeExpressProAdView playerStatusChanged:(GDTMediaPlayerStatus)status
+{
+    NSLog(@"%s",__FUNCTION__);
 }
 
 @end

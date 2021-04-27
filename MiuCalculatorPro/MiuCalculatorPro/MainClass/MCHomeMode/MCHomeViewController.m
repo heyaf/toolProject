@@ -11,11 +11,14 @@
 #import "MCSettingViewController.h"
 #import "MCCalculatorObject.h"
 #import "MCCalculatorManager.h"
-@interface MCHomeViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+#import <GDTUnifiedBannerView.h>
+
+@interface MCHomeViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,GDTUnifiedBannerViewDelegate>
 {
     CGFloat _itemHeight;
     NSString *_preStr;
 }
+@property (nonatomic, strong) GDTUnifiedBannerView *bannerView;
 
 @property (nonatomic, strong) NSMutableArray<NSArray *> *dataArray;
 @property (nonatomic, strong) UICollectionView *myCollectionView;
@@ -43,7 +46,31 @@
     
 
     [self setNavButton];
+    [self loadAdAndShow:nil];
 }
+- (void)loadAdAndShow:(id)sender {
+      if (self.bannerView.superview) {
+          [self.bannerView removeFromSuperview];
+      }
+      [self.view addSubview:self.bannerView];
+ 
+      [self.bannerView loadAdAndShow];
+  }
+- (GDTUnifiedBannerView *)bannerView
+  {
+    if (!_bannerView) {
+        CGRect rect = CGRectMake(0, kNavBarHeight, kScreenWidth, 100);
+        _bannerView = [[GDTUnifiedBannerView alloc]
+                       initWithFrame:rect
+                       placementId:kGDTSDKBanner
+                       viewController:self];
+   
+        _bannerView.animated = YES;
+        _bannerView.autoSwitchInterval = 5;
+        _bannerView.delegate = self;
+    }
+    return _bannerView;
+  }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.translucent = YES;
@@ -364,5 +391,88 @@ static NSInteger count = 6;
     
     [self layoutViews];
 }
+#pragma mark - GDTUnifiedBannerViewDelegate
+/**
+ *  请求广告条数据成功后调用
+ *  当接收服务器返回的广告数据成功后调用该函数
+ */
+- (void)unifiedBannerViewDidLoad:(GDTUnifiedBannerView *)unifiedBannerView
+{
+    NSLog(@"%s",__FUNCTION__);
+    NSLog(@"unified banner did load");
+}
 
+/**
+ *  请求广告条数据失败后调用
+ *  当接收服务器返回的广告数据失败后调用该函数
+ */
+
+- (void)unifiedBannerViewFailedToLoad:(GDTUnifiedBannerView *)unifiedBannerView error:(NSError *)error
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/**
+ *  banner2.0曝光回调
+ */
+- (void)unifiedBannerViewWillExpose:(nonnull GDTUnifiedBannerView *)unifiedBannerView {
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/**
+ *  banner2.0点击回调
+ */
+- (void)unifiedBannerViewClicked:(GDTUnifiedBannerView *)unifiedBannerView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/**
+ *  应用进入后台时调用
+ *  当点击应用下载或者广告调用系统程序打开，应用将被自动切换到后台
+ */
+- (void)unifiedBannerViewWillLeaveApplication:(GDTUnifiedBannerView *)unifiedBannerView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/**
+ *  全屏广告页已经被关闭
+ */
+- (void)unifiedBannerViewDidDismissFullScreenModal:(GDTUnifiedBannerView *)unifiedBannerView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/**
+ *  全屏广告页即将被关闭
+ */
+- (void)unifiedBannerViewWillDismissFullScreenModal:(GDTUnifiedBannerView *)unifiedBannerView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/**
+ *  banner2.0广告点击以后即将弹出全屏广告页
+ */
+- (void)unifiedBannerViewWillPresentFullScreenModal:(GDTUnifiedBannerView *)unifiedBannerView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/**
+ *  banner2.0广告点击以后弹出全屏广告页完毕
+ */
+- (void)unifiedBannerViewDidPresentFullScreenModal:(GDTUnifiedBannerView *)unifiedBannerView
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/**
+ *  banner2.0被用户关闭时调用
+ */
+- (void)unifiedBannerViewWillClose:(nonnull GDTUnifiedBannerView *)unifiedBannerView {
+    self.bannerView = nil;
+    NSLog(@"%s",__FUNCTION__);
+}
 @end

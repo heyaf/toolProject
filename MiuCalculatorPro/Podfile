@@ -7,6 +7,8 @@ target 'MiuCalculatorPro' do
 
   # Pods for MiuCalculatorPro
 #  pod 'MBProgressHUD'
+  pod 'GDTMobSDK'
+  pod 'BaiduMobStatCodeless'
   pod 'SDAutoLayout'
   pod 'FMDB'
   pod 'SXAlertView'

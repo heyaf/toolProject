@@ -1,30 +1,40 @@
 PODS:
+  - BaiduMobStatCodeless (5.3.3)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - GDTMobSDK (4.12.60):
+    - GDTMobSDK/GDTMobSDK (= 4.12.60)
+  - GDTMobSDK/GDTMobSDK (4.12.60)
   - SDAutoLayout (2.2.1)
   - SVProgressHUD (2.2.5)
   - SXAlertView (2.2)
 
 DEPENDENCIES:
+  - BaiduMobStatCodeless
   - FMDB
+  - GDTMobSDK
   - SDAutoLayout
   - SVProgressHUD
   - SXAlertView
 
 SPEC REPOS:
   trunk:
+    - BaiduMobStatCodeless
     - FMDB
+    - GDTMobSDK
     - SDAutoLayout
     - SVProgressHUD
     - SXAlertView
 
 SPEC CHECKSUMS:
+  BaiduMobStatCodeless: 198e04ed005f6f6c467886959c040a1c7d5b3236
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GDTMobSDK: fcaaeaf16af7203627e4e5d2ab81949c158e3d9c
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SXAlertView: de20ffbd3c63df4bece9bc344d209682d1919137
 
-PODFILE CHECKSUM: 4ae350f13f1567796fccef511706991ae0c3880e
+PODFILE CHECKSUM: add2941b5aa2792ca606dca0bacc93a802af5953
 
 COCOAPODS: 1.10.1

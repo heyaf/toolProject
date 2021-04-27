@@ -20,7 +20,13 @@
 #import <SDAutoLayout/SDAutoLayout.h>
 
 
+#define kGDTSDKAPPID @"1111704855"
 
+#define kGDTSDKBanner @"8091887271211343"
+
+#define KGDTSDKKaiPin @"7061888221410321"
+
+#define kplacementId @"5011784281914334"
 //选择的颜色
 #define KSelColor @"KSELECTSETTINGCOLOR"
 //动画的开关
